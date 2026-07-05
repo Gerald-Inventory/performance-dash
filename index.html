@@ -15,15 +15,18 @@
 
         .header-box { text-align: center; margin-bottom: 15px; }
         h1 { font-size: 1.4rem; margin: 0; color: var(--primary); }
-        #status { font-size: 11px; color: #64748b; margin-top: 5px; padding: 4px; border-radius: 4px; }
-        .error-status { background: #fee2e2; color: #b91c1c !important; font-weight: bold; }
+        #status { font-size: 11px; color: #64748b; margin-top: 5px; padding: 6px; border-radius: 6px; display: inline-block; }
+        .error-status { background: #fee2e2; color: #b91c1c !important; font-weight: bold; border: 1px solid #fecaca; }
+        .success-status { background: #dcfce7; color: #166534 !important; }
 
-        /* File input fallback styling */
+        /* Enhanced Fallback Input Panel */
         .upload-zone {
-            background: #e2e8f0; padding: 10px; border-radius: 10px;
+            background: white; padding: 15px; border-radius: 15px;
             text-align: center; margin-bottom: 15px; font-size: 13px;
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
+            border: 2px dashed #cbd5e1;
         }
-        .upload-zone input { font-size: 12px; margin-top: 5px; }
+        .upload-zone input { font-size: 14px; margin-top: 8px; width: 100%; max-width: 250px; }
 
         .period-flex { display: flex; gap: 10px; margin-bottom: 15px; }
         .period-btn { 
@@ -55,7 +58,7 @@
         
         select[multiple] { 
             padding: 8px; border-radius: 10px; border: 1px solid #e2e8f0; 
-            font-size: 15px; background-color: #f8fafc; min-height: 95px;
+            font-size: 15px; background-color: #f8fafc; min-height: 100px;
         }
         .select-help { font-size: 9px; color: #94a3b8; margin-top: 2px; text-transform: none; font-weight: normal; }
 
@@ -85,12 +88,12 @@
 
 <div class="header-box">
     <h1>DSR Analysis</h1>
-    <div id="status">Attempting to auto-load dsr.csv...</div>
+    <div id="status">Connecting to GitHub file system...</div>
 </div>
 
-<!-- Fallback upload layout for local testing or strict browsers -->
-<div class="upload-zone" id="uploadZone">
-    <div>💡 <strong>Running locally?</strong> Browsers block auto-loading files for security. Drop or select your file manually:</div>
+<!-- Upload form handles local hosting & repo fallback errors instantly -->
+<div class="upload-zone" id="uploadZone" style="display: none;">
+    <div><strong>GitHub Auto-load Failed:</strong> Could not find your CSV file in this repository path automatically. Please select it manually:</div>
     <input type="file" id="csvFileInput" accept=".csv" onchange="handleManualFile(event)">
 </div>
 
@@ -112,19 +115,19 @@
 
 <div class="controls-card">
     <div class="control-group">
-        <label>Division <span class="select-help">(Hold Ctrl/Cmd or drag to select multiple)</span></label>
+        <label>Division <span class="select-help">(Tap multiple items)</span></label>
         <select id="divSlicer" onchange="handleDivChange()" multiple><option>Waiting for data...</option></select>
     </div>
     <div class="control-group">
-        <label>Department <span class="select-help">(Tap multiple)</span></label>
+        <label>Department <span class="select-help">(Tap multiple items)</span></label>
         <select id="deptSlicer" onchange="handleDeptChange()" multiple><option>All</option></select>
     </div>
     <div class="control-group">
-        <label>Class <span class="select-help">(Tap multiple)</span></label>
+        <label>Class <span class="select-help">(Tap multiple items)</span></label>
         <select id="classSlicer" onchange="handleClassChange()" multiple><option>All</option></select>
     </div>
     <div class="control-group">
-        <label>Subclass <span class="select-help">(Tap multiple)</span></label>
+        <label>Subclass <span class="select-help">(Tap multiple items)</span></label>
         <select id="subclassSlicer" onchange="applyFilters()" multiple><option>All</option></select>
     </div>
 </div>
@@ -138,7 +141,7 @@
             </tr>
         </thead>
         <tbody id="tableBody">
-            <tr><td colspan="2" style="text-align:center; padding: 40px; color: #94a3b8;">Please wait or upload your dsr.csv file above.</td></tr>
+            <tr><td colspan="2" style="text-align:center; padding: 40px; color: #94a3b8;">Scanning for data source file...</td></tr>
         </tbody>
     </table>
 </div>
@@ -149,63 +152,75 @@
 
     const cleanNum = (v) => v ? parseFloat(v.toString().replace(/,/g, '').replace(/%/g, '')) || 0 : 0;
 
-    // 1. Auto Load Attempt
+    // Array of files paths to check in case of casing typos on GitHub filesystems
+    const fallBackPaths = ["dsr.csv", "DSR.csv", "dsr.CSV", "../dsr.csv"];
+    let currentPathIndex = 0;
+
     window.addEventListener('DOMContentLoaded', () => {
-        Papa.parse("dsr.csv", {
+        tryFetchCSV();
+    });
+
+    // Tries multiple filename paths before stopping and rendering upload screen
+    function tryFetchCSV() {
+        if (currentPathIndex >= fallBackPaths.length) {
+            updateStatus("❌ GitHub load failed. Please upload dsr.csv manually below.", true);
+            document.getElementById('uploadZone').style.display = 'block';
+            return;
+        }
+
+        let targetPath = fallBackPaths[currentPathIndex];
+        console.log("Testing path: " + targetPath);
+
+        Papa.parse(targetPath, {
             download: true,
             header: true,
             dynamicTyping: true,
             skipEmptyLines: true,
             complete: function(results) {
-                processParsedData(results);
+                // If it successfully loads but empty, move to next pattern entry
+                if(!results.data || results.data.length < 2 || !results.data[0].Division) {
+                    currentPathIndex++;
+                    tryFetchCSV();
+                } else {
+                    processParsedData(results);
+                }
             },
-            error: function(err) {
-                console.error("Auto-load failed: ", err);
-                updateStatus("⚠️ Auto-load failed (CORS local restriction or 404). Use the upload button below.", true);
+            error: function() {
+                currentPathIndex++;
+                tryFetchCSV();
             }
         });
-    });
+    }
 
-    // 2. Manual Backup Upload
     function handleManualFile(event) {
         const file = event.target.files[0];
         if (!file) return;
 
-        updateStatus("Parsing uploaded file...", false);
+        updateStatus("Parsing custom uploaded matrix file...", false);
         Papa.parse(file, {
             header: true,
             dynamicTyping: true,
             skipEmptyLines: true,
             complete: function(results) {
                 processParsedData(results);
-                // Hide upload zone once successfully loaded manually to clean up screen space
                 document.getElementById('uploadZone').style.display = 'none';
             },
             error: function(err) {
-                updateStatus("❌ Parsing Error: " + err.message, true);
+                updateStatus("❌ Critical File Parsing Error: " + err.message, true);
             }
         });
     }
 
-    // Process raw output & check columns safely
     function processParsedData(results) {
         rawData = results.data.filter(row => row.Division);
         
         if(rawData.length === 0) {
-            updateStatus("❌ Error: File parsed but zero valid data rows found. Check 'Division' column header.", true);
+            updateStatus("❌ Error: Header columns missing. Checked for 'Division'.", true);
+            document.getElementById('uploadZone').style.display = 'block';
             return;
         }
 
-        // Quick verification check of key columns in developer console
-        const firstRow = rawData[0];
-        console.log("Detected Columns:", Object.keys(firstRow));
-        
-        if (!('Cy_Sale_Value' in firstRow)) {
-            updateStatus("⚠️ Warning: Column 'Cy_Sale_Value' not found exactly as spelled! Checks console.", true);
-        } else {
-            updateStatus("✅ Data Loaded: " + rawData.length + " rows active.", false);
-        }
-
+        updateStatus("✅ Active Data Synchronized", false);
         initFilters();
     }
 
@@ -213,9 +228,9 @@
         const statusDiv = document.getElementById('status');
         statusDiv.innerText = msg;
         if(isError) {
-            statusDiv.classList.add('error-status');
+            statusDiv.className = 'error-status';
         } else {
-            statusDiv.classList.remove('error-status');
+            statusDiv.className = 'success-status';
         }
     }
 
@@ -300,7 +315,6 @@
                    (String(row.Year).toUpperCase() === currentPeriod);
         });
 
-        // Summary calculations
         const totalCySales = filtered.reduce((sum, r) => sum + cleanNum(r.Cy_Sale_Value), 0);
         const totalSpd = filtered.reduce((sum, r) => sum + cleanNum(r.SPD), 0);
         
@@ -315,7 +329,7 @@
         tbody.innerHTML = '';
         
         if (data.length === 0) {
-            tbody.innerHTML = '<tr><td colspan="2" style="text-align:center; padding: 30px;">No results found for current filters.</td></tr>';
+            tbody.innerHTML = '<tr><td colspan="2" style="text-align:center; padding: 30px;">No results matching current selections.</td></tr>';
             return;
         }
 
@@ -332,8 +346,8 @@
             const tr = document.createElement('tr');
             tr.innerHTML = `
                 <td>
-                    <span class="sub-bold">${row['Subclass Name'] || 'Unknown'}</span>
-                    <span class="class-muted">${row['Class name'] || 'Unknown'}</span>
+                    <span class="sub-bold">${row['Subclass Name'] || 'N/A'}</span>
+                    <span class="class-muted">${row['Class name'] || 'N/A'}</span>
                 </td>
                 <td class="val-num">
                     <div>${spd.toLocaleString(undefined, {maximumFractionDigits: 0})}</div>
@@ -345,14 +359,13 @@
             tbody.appendChild(tr);
         });
 
-        // Table Bottom Aggregation Total
         const avgGrowth = runningGrowthSum / data.length;
         const trTotal = document.createElement('tr');
         trTotal.className = 'total-row';
         trTotal.innerHTML = `
             <td>
                 <span class="sub-bold">TOTAL</span>
-                <span class="class-muted">${data.length} records processed</span>
+                <span class="class-muted">${data.length} entries calculated</span>
             </td>
             <td class="val-num">
                 <div>${totalSpd.toLocaleString(undefined, {maximumFractionDigits: 0})}</div>
