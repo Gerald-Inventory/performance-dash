@@ -1,468 +1,272 @@
-r,Dept Code,Dept Name,Class Code,Class name,Sub Class Code,Subclass Name,Cy_Sale_Value,SPD,Growth%,Year
-Fur,331,Bedroom,1,Beds,1,Super King Bed,"337,486",925,46.9%,YTD
-Fur,331,Bedroom,1,Beds,2,King Bed,"3,755,929","10,290",17.9%,YTD
-Fur,331,Bedroom,1,Beds,3,Queen Bed,"1,443,262","3,954",56.1%,YTD
-Fur,331,Bedroom,1,Beds,4,Single Bed,"1,674,922","4,589",20.9%,YTD
-Fur,331,Bedroom,1,Beds,5,Day Bed,"85,961",236,-10.9%,YTD
-Fur,331,Bedroom,1,Beds,6,Modular Bedroom,"1,704,982","4,671",-15.3%,YTD
-Fur,331,Bedroom,2,Bedroom Storage,1,Chest Of Drawers,"1,261,823","3,457",12.7%,YTD
-Fur,331,Bedroom,2,Bedroom Storage,2,Night Stands,"2,997,988","8,214",21.7%,YTD
-Fur,331,Bedroom,2,Bedroom Storage,3,Shoe Racks,"797,032","2,184",11.2%,YTD
-Fur,331,Bedroom,2,Bedroom Storage,4,Benches & Storage,"402,304","1,102",48.5%,YTD
-Fur,331,Bedroom,2,Bedroom Storage,5,Safe,"242,515",664,-7.1%,YTD
-Fur,331,Bedroom,2,Bedroom Storage,6,Vanity,"3,814,389","10,450",12.2%,YTD
-Fur,331,Bedroom,2,Bedroom Storage,7,Mirror & Stool,"487,940","1,337",44.6%,YTD
-Fur,331,Bedroom,2,Bedroom Storage,8,Laundry Furniture,"11,773",32,2508.6%,YTD
-Fur,331,Bedroom,3,Bed Sets,1,Super King Bed Sets,"58,902",161,-60.3%,YTD
-Fur,331,Bedroom,3,Bed Sets,2,King Bed Sets,"915,248","2,508",-21.3%,YTD
-Fur,331,Bedroom,4,Wardrobes,1,2 Door Wardrobe,"206,216",565,225.1%,YTD
-Fur,331,Bedroom,4,Wardrobes,2,3 Door Wardrobe,"563,237","1,543",80.8%,YTD
-Fur,331,Bedroom,4,Wardrobes,3,4 Door Wardrobe,"273,765",750,0.2%,YTD
-Fur,331,Bedroom,4,Wardrobes,4,5 Door Warbrobe,"1,557,429","4,267",6.7%,YTD
-Fur,331,Bedroom,4,Wardrobes,5,6 Door Wardrobe,"2,780,061","7,617",-1.2%,YTD
-Fur,331,Bedroom,4,Wardrobes,6,Sliding Door Wardrobe,"902,730","2,473",-13.5%,YTD
-Fur,331,Bedroom,4,Wardrobes,7,Modular Wardrobe,"212,864",583,-39.8%,YTD
-Fur,331,Bedroom,5,Mattresses,1,Super King Mattresses,"295,793",810,1.6%,YTD
-Fur,331,Bedroom,5,Mattresses,2,King Mattresses,"1,901,423","5,209",5.9%,YTD
-Fur,331,Bedroom,5,Mattresses,3,Queen Mattresses,"786,079","2,154",34.8%,YTD
-Fur,331,Bedroom,5,Mattresses,4,Single Mattresses,"1,634,254","4,477",-0.6%,YTD
-Fur,332,Dining,1,Tables & Chairs,1,10 Seater & Above,"1,459,377","3,998",-12.4%,YTD
-Fur,332,Dining,1,Tables & Chairs,2,8 Seater,"3,735,050","10,233",-4.3%,YTD
-Fur,332,Dining,1,Tables & Chairs,3,6 Seater,"3,361,305","9,209",-0.8%,YTD
-Fur,332,Dining,1,Tables & Chairs,4,4 Seater,"801,937","2,197",-2.7%,YTD
-Fur,332,Dining,1,Tables & Chairs,5,2 Seater,"78,643",215,-65.1%,YTD
-Fur,332,Dining,1,Tables & Chairs,6,Tea Table Sets,"198,796",545,53.6%,YTD
-Fur,332,Dining,1,Tables & Chairs,7,Chairs,"9,699,408","26,574",1.7%,YTD
-Fur,332,Dining,1,Tables & Chairs,8,Bar Chair & Stools,"321,033",880,-7.3%,YTD
-Fur,332,Dining,2,Serving & Storage,1,Buffet & Hutch,"20,417",56,878.7%,YTD
-Fur,332,Dining,2,Serving & Storage,2,Sideboards & Mirror,"2,874,017","7,874",-2.7%,YTD
-Fur,332,Dining,2,Serving & Storage,3,Bar Counter & Curios,"187,790",514,21.2%,YTD
-Fur,332,Dining,2,Serving & Storage,4,Kitchen Islands,"73,271",201,-48.1%,YTD
-Fur,333,Living,1,Living Case Goods,1,Media Units,"1,641,153","4,496",-14.8%,YTD
-Fur,333,Living,1,Living Case Goods,2,Benches & Ottomans,"976,856","2,676",-1.0%,YTD
-Fur,333,Living,1,Living Case Goods,3,Nesting & Accent Tables,"1,979,959","5,425",8.0%,YTD
-Fur,333,Living,1,Living Case Goods,4,Shelves,"392,245","1,075",1.9%,YTD
-Fur,333,Living,1,Living Case Goods,5,Console & Mirror,"1,380,120","3,781",9.3%,YTD
-Fur,333,Living,1,Living Case Goods,6,Serving Trolleys,"628,009","1,721",-4.4%,YTD
-Fur,333,Living,2,HOSO,1,Desks,"625,885","1,715",7.1%,YTD
-Fur,333,Living,2,HOSO,2,Bookcases & Storage,"155,193",425,34.7%,YTD
-Fur,333,Living,2,HOSO,3,Study Chairs,"488,829","1,339",48.3%,YTD
-Fur,333,Living,2,HOSO,4,Nest of Tables,0,0,0.0%,YTD
-Fur,333,Living,2,HOSO,5,Gaming Desks,"55,203",151,10.3%,YTD
-Fur,333,Living,2,HOSO,6,Gaming Chair,"91,741",251,56.7%,YTD
-Fur,333,Living,3,Outdoor,1,Outdoor Dining,"295,526",810,61.7%,YTD
-Fur,333,Living,3,Outdoor,2,Outdoor Lounge,"678,067","1,858",-34.7%,YTD
-Fur,333,Living,4,Home Office,1,Desks,0,0,0.0%,YTD
-Fur,333,Living,4,Home Office,2,Book Cases,0,0,0.0%,YTD
-Fur,334,Sofas & Tables,1,Fabric Sofas,1,Fabric Sets,0,0,0.0%,YTD
-Fur,334,Sofas & Tables,1,Fabric Sofas,2,Fabric Corners,"4,406,777","12,073",-6.1%,YTD
-Fur,334,Sofas & Tables,1,Fabric Sofas,3,Fabric Sofas,"17,255,203","47,275",-2.3%,YTD
-Fur,334,Sofas & Tables,2,Non-Fabric Sofas,1,Non-Fabric Sets,0,0,0.0%,YTD
-Fur,334,Sofas & Tables,2,Non-Fabric Sofas,2,Non-Fabric Corners,"54,262",149,-48.8%,YTD
-Fur,334,Sofas & Tables,2,Non-Fabric Sofas,3,Non-Fabric Sofas,"983,819","2,695",149.9%,YTD
-Fur,334,Sofas & Tables,3,Individual Sofas,1,Accent Chairs,"1,998,176","5,474",-13.3%,YTD
-Fur,334,Sofas & Tables,3,Individual Sofas,2,Sofa Bed,"1,259,118","3,450",14.9%,YTD
-Fur,334,Sofas & Tables,4,Recliners,1,Fabric Recliner,"3,495,228","9,576",8.7%,YTD
-Fur,334,Sofas & Tables,4,Recliners,2,Non-Fabric Recliner,"225,160",617,-38.0%,YTD
-Fur,334,Sofas & Tables,5,Modular Sofas,1,Fabric Modular,"14,157,897","38,789",25.1%,YTD
-Fur,334,Sofas & Tables,5,Modular Sofas,2,Non-Fabric Modular,0,0,0.0%,YTD
-Fur,334,Sofas & Tables,5,Modular Sofas,3,Modular Recliners,"853,317","2,338",37.5%,YTD
-Fur,334,Sofas & Tables,6,CT / ET,1,Coffee Tables,"4,822,942","13,214",13.2%,YTD
-Fur,334,Sofas & Tables,6,CT / ET,2,End Tables,"2,610,128","7,151",11.8%,YTD
-Hh,341,Lighting,1,Lamps,1,Table Lamp,"10,029,969","27,479",22.5%,YTD
-Hh,341,Lighting,1,Lamps,2,Floor Lamp,"3,446,294","9,442",2.1%,YTD
-Hh,341,Lighting,1,Lamps,3,Ceiling Lamp,"1,139,060","3,121",23.9%,YTD
-Hh,341,Lighting,1,Lamps,4,Wall Lamp,"46,793",128,0.7%,YTD
-Hh,341,Lighting,2,Lights,1,Decorative Lighting,"357,417",979,-0.3%,YTD
-Hh,341,Lighting,2,Lights,2,Solar,0,0,0.0%,YTD
-Hh,341,Lighting,3,Core Electrical,1,Bulbs,"1,175,451","3,220",4.3%,YTD
-Hh,341,Lighting,3,Core Electrical,2,Batteries,"171,811",471,-13.5%,YTD
-Hh,341,Lighting,3,Core Electrical,3,Electrical Accessories,"24,695",68,-10.4%,YTD
-Hh,342,Floor Covering,1,Rugs,1,Rugs,"4,707,434","12,897",6.7%,YTD
-Hh,342,Floor Covering,1,Rugs,2,Door Mats,"1,016,362","2,785",5.7%,YTD
-Hh,342,Floor Covering,2,Floor Accessories,1,Floor Accessories,"45,429",124,-23.1%,YTD
-Hh,343,Wall Decor,1,Wall Art,1,Wall Art & Frames,"5,335,028","14,617",8.1%,YTD
-Hh,343,Wall Decor,1,Wall Art,2,Wall Plaques,"517,621","1,418",-19.1%,YTD
-Hh,343,Wall Decor,1,Wall Art,3,Wall Treatments & Tapestries,"210,645",577,6.8%,YTD
-Hh,343,Wall Decor,2,Photo Frames,1,Photo Frames,"302,494",829,9.1%,YTD
-Hh,343,Wall Decor,3,Mirrors,1,Floor & Wall Mirrors,"4,303,580","11,791",3.5%,YTD
-Hh,343,Wall Decor,4,Clocks,1,Clocks,"551,877","1,512",-7.8%,YTD
-Hh,344,Soft Furnishing,1,Duvets & Pillows,1,Duvets,"1,160,698","3,180",13.7%,YTD
-Hh,344,Soft Furnishing,1,Duvets & Pillows,2,Pillows,"2,896,850","7,937",-3.4%,YTD
-Hh,344,Soft Furnishing,2,Bed Protection,1,Mattress Toppers,"740,800","2,030",3.2%,YTD
-Hh,344,Soft Furnishing,2,Bed Protection,2,Mattress & Pillow Protectors,"485,082","1,329",-8.3%,YTD
-Hh,344,Soft Furnishing,3,Bed Linen,1,Comforter Sets,"7,658,342","20,982",0.5%,YTD
-Hh,344,Soft Furnishing,3,Bed Linen,2,Duvet Covers,"2,086,650","5,717",32.2%,YTD
-Hh,344,Soft Furnishing,3,Bed Linen,3,Flat Sheets,"287,648",788,5.1%,YTD
-Hh,344,Soft Furnishing,3,Bed Linen,4,Fitted Sheets,"3,378,756","9,257",5.5%,YTD
-Hh,344,Soft Furnishing,3,Bed Linen,5,Pillow Case,"932,062","2,554",-0.5%,YTD
-Hh,344,Soft Furnishing,3,Bed Linen,6,Bedspread,"799,397","2,190",28.4%,YTD
-Hh,344,Soft Furnishing,3,Bed Linen,7,Bedding Accessories,"38,531",106,-14.2%,YTD
-Hh,344,Soft Furnishing,4,Throws & Blankets,1,Throws,"2,132,613","5,843",18.0%,YTD
-Hh,344,Soft Furnishing,4,Throws & Blankets,2,Blankets,"1,493,186","4,091",2.1%,YTD
-Hh,344,Soft Furnishing,5,Cushions,1,Covers,"1,846,436","5,059",-13.5%,YTD
-Hh,344,Soft Furnishing,5,Cushions,2,Filled Cushions,"5,498,293","15,064",49.0%,YTD
-Hh,344,Soft Furnishing,5,Cushions,3,Fillings,"1,086,271","2,976",9.8%,YTD
-Hh,344,Soft Furnishing,5,Cushions,4,Bean Bag,"201,900",553,4.2%,YTD
-Hh,344,Soft Furnishing,5,Cushions,5,Floor Cushions,"572,212","1,568",-12.9%,YTD
-Hh,344,Soft Furnishing,5,Cushions,6,Chair Pad,"106,633",292,-20.0%,YTD
-Hh,344,Soft Furnishing,6,Window Treatments,1,Curtains,"2,035,764","5,577",-19.8%,YTD
-Hh,344,Soft Furnishing,6,Window Treatments,2,Blinds,"533,857","1,463",-20.3%,YTD
-Hh,344,Soft Furnishing,6,Window Treatments,3,Poles,"729,816","1,999",-19.2%,YTD
-Hh,344,Soft Furnishing,6,Window Treatments,4,Window Accessories,"208,973",573,-17.4%,YTD
-Hh,345,Home Decor,1,Decor Accessories,1,Lanterns,"735,027","2,014",-7.2%,YTD
-Hh,345,Home Decor,1,Decor Accessories,2,Decor Accents,"3,064,866","8,397",-2.7%,YTD
-Hh,345,Home Decor,1,Decor Accessories,3,Vases & Bowls,"5,863,400","16,064",9.1%,YTD
-Hh,345,Home Decor,1,Decor Accessories,4,Candle Holders,"2,420,711","6,632",8.5%,YTD
-Hh,345,Home Decor,1,Decor Accessories,5,Boxes & Trays,"2,696,387","7,387",0.0%,YTD
-Hh,345,Home Decor,2,Home Fragrance,1,Candles,"2,358,037","6,460",2.7%,YTD
-Hh,345,Home Decor,2,Home Fragrance,2,Potpourri & Oils,"908,369","2,489",1.0%,YTD
-Hh,345,Home Decor,2,Home Fragrance,3,Revitalisers & Humidifiers,"402,672","1,103",7.9%,YTD
-Hh,345,Home Decor,2,Home Fragrance,4,Diffusers & Burners,"2,890,955","7,920",7.0%,YTD
-Hh,345,Home Decor,2,Home Fragrance,5,Gift Sets,"562,133","1,540",83.4%,YTD
-Hh,345,Home Decor,3,Indoor Garden,1,Stem Flowers,"1,181,372","3,237",14.6%,YTD
-Hh,345,Home Decor,3,Indoor Garden,2,Plants & Arrangements,"2,773,291","7,598",1.6%,YTD
-Hh,345,Home Decor,3,Indoor Garden,3,Fresh Flowers & Plants,0,0,0.0%,YTD
-Hh,345,Home Decor,3,Indoor Garden,4,Trees,"1,328,936","3,641",-0.6%,YTD
-Hh,345,Home Decor,3,Indoor Garden,5,Pots & Planters,"1,519,277","4,162",17.2%,YTD
-Hh,345,Home Decor,3,Indoor Garden,6,Fountains & Outdoor Accessories,"554,916","1,520",27.7%,YTD
-Hh,346,Tabletop,1,Dinnerware,1,50 + pcs set,"693,533","1,900",20.8%,YTD
-Hh,346,Tabletop,1,Dinnerware,2,40 - 49 pcs set,"552,061","1,512",31.3%,YTD
-Hh,346,Tabletop,1,Dinnerware,3,30 - 39 pcs set,"1,759,614","4,821",8.5%,YTD
-Hh,346,Tabletop,1,Dinnerware,4,12 - 29 pcs set,"947,623","2,596",8.4%,YTD
-Hh,346,Tabletop,1,Dinnerware,5,Single Dinnerware,"2,523,435","6,914",-0.8%,YTD
-Hh,346,Tabletop,2,Flatware,1,Cutlery Sets,"1,307,270","3,582",24.5%,YTD
-Hh,346,Tabletop,2,Flatware,2,Single Cutlery,"355,427",974,-8.3%,YTD
-Hh,346,Tabletop,3,Drinkware,1,Stemware,"429,554","1,177",12.2%,YTD
-Hh,346,Tabletop,3,Drinkware,2,Glasses & Sets,"852,978","2,337",10.7%,YTD
-Hh,346,Tabletop,3,Drinkware,3,Tea & Coffee,"1,627,836","4,460",9.2%,YTD
-Hh,346,Tabletop,3,Drinkware,4,Drink Serveware,"911,251","2,497",21.8%,YTD
-Hh,346,Tabletop,4,Serve,1,Serveware,"2,749,204","7,532",9.8%,YTD
-Hh,346,Tabletop,4,Serve,2,Food Warmers,"956,524","2,621",16.5%,YTD
-Hh,346,Tabletop,4,Serve,3,Trays,"531,048","1,455",-20.5%,YTD
-Hh,346,Tabletop,5,Table Linen,1,Table Cover,"339,144",929,23.8%,YTD
-Hh,346,Tabletop,5,Table Linen,2,Placemats,"1,246,634","3,415",11.1%,YTD
-Hh,346,Tabletop,5,Table Linen,3,Runners,"490,423","1,344",7.0%,YTD
-Hh,346,Tabletop,5,Table Linen,4,Napkins & Accessories,"1,100,615","3,015",-2.8%,YTD
-Hh,346,Tabletop,5,Table Linen,5,Chair Pad,0,0,0.0%,YTD
-Hh,346,Tabletop,6,Outdoor Dining,1,Outdoor Crockery,"92,707",254,-26.5%,YTD
-Hh,346,Tabletop,6,Outdoor Dining,2,Outdoor Cutlery,"27,396",75,-6.5%,YTD
-Hh,346,Tabletop,6,Outdoor Dining,3,Outdoor Drinkware,"16,977",47,-37.7%,YTD
-Hh,347,Kitchen,1,Kitchenwares,1,Kitchen Knives & Blocks,"328,542",900,28.5%,YTD
-Hh,347,Kitchen,1,Kitchenwares,2,Kitchen Accessories,"2,540,635","6,961",10.6%,YTD
-Hh,347,Kitchen,1,Kitchenwares,3,Kitchen Appliances,0,0,-100.0%,YTD
-Hh,347,Kitchen,1,Kitchenwares,4,Kitchen Utensils,"893,557","2,448",24.9%,YTD
-Hh,347,Kitchen,1,Kitchenwares,5,Kitchen Trolleys,"299,493",821,14.2%,YTD
-Hh,347,Kitchen,2,Cookware,1,Pots & Pans,"1,259,448","3,451",21.7%,YTD
-Hh,347,Kitchen,2,Cookware,2,Cookware Sets,"249,884",685,-6.8%,YTD
-Hh,347,Kitchen,2,Cookware,3,Bakeware,"1,234,484","3,382",27.0%,YTD
-Hh,347,Kitchen,3,Kitchen Linen,1,Apron / Gloves / Pot holder,"334,181",916,19.2%,YTD
-Hh,347,Kitchen,3,Kitchen Linen,2,Kitchen Towels & Linen,"356,407",976,15.8%,YTD
-Hh,347,Kitchen,4,Kitchen Storage,1,Food Storage & Bottles,"2,760,306","7,562",32.3%,YTD
-Hh,348,Bathroom,1,Shower,1,Shower Curtain,"88,116",241,-23.5%,YTD
-Hh,348,Bathroom,1,Shower,2,Shower Curtain Pole,"38,130",104,-29.3%,YTD
-Hh,348,Bathroom,1,Shower,3,Shower Accessories,"310,200",850,22.0%,YTD
-Hh,348,Bathroom,2,Bath Accessories,1,Bathroom Bins,"5,100,002","13,973",0.2%,YTD
-Hh,348,Bathroom,2,Bath Accessories,2,Baskets & Storage,"490,562","1,344",21.5%,YTD
-Hh,348,Bathroom,2,Bath Accessories,3,Wall Fixtures & Wireware,"345,565",947,7.4%,YTD
-Hh,348,Bathroom,2,Bath Accessories,4,Bathroom Accessories Sets,"401,962","1,101",48.3%,YTD
-Hh,348,Bathroom,2,Bath Accessories,5,Soap Dishes & Dispensers,"2,602,585","7,130",9.5%,YTD
-Hh,348,Bathroom,2,Bath Accessories,6,Tooth Brush Holders & Tumblers,"627,730","1,720",9.0%,YTD
-Hh,348,Bathroom,2,Bath Accessories,7,Hygiene Accessories,"1,440,902","3,948",8.0%,YTD
-Hh,348,Bathroom,2,Bath Accessories,8,Vanity & Scales,"6,278,152","17,200",14.3%,YTD
-Hh,348,Bathroom,3,Bath Textiles,1,Towels,"2,576,317","7,058",9.6%,YTD
-Hh,348,Bathroom,3,Bath Textiles,2,Bathrobes & Slippers,"897,878","2,460",34.0%,YTD
-Hh,348,Bathroom,3,Bath Textiles,3,Bathmats,"3,694,926","10,123",15.7%,YTD
-Hh,349,Utility & Storage,1,Storage,1,Clothes Storage,"216,714",594,28.1%,YTD
-Hh,349,Utility & Storage,1,Storage,2,Clothes Hangers,"1,016,071","2,784",0.2%,YTD
-Hh,349,Utility & Storage,1,Storage,3,Tall Hangers & Rails,"1,602,452","4,390",-6.9%,YTD
-Hh,349,Utility & Storage,1,Storage,4,Cosmetic & Beauty Storage,"1,847,043","5,060",26.9%,YTD
-Hh,349,Utility & Storage,1,Storage,5,Underbed Storage,"1,883,665","5,161",5.7%,YTD
-Hh,349,Utility & Storage,1,Storage,6,Shoe Storage,"453,716","1,243",0.2%,YTD
-Hh,349,Utility & Storage,1,Storage,7,Utility Storage,"967,706","2,651",32.2%,YTD
-Hh,349,Utility & Storage,1,Storage,8,Decorative Boxes & Baskets,"1,040,169","2,850",16.1%,YTD
-Hh,349,Utility & Storage,1,Storage,9,Drawer Towers,"236,751",649,3.7%,YTD
-Hh,349,Utility & Storage,1,Storage,10,Media  Storage,"132,829",364,-9.3%,YTD
-Hh,349,Utility & Storage,1,Storage,11,Storage Accessories,"452,108","1,239",24.6%,YTD
-Hh,349,Utility & Storage,2,Cleaning,1,Specialist Cleaning,"99,658",273,-2.4%,YTD
-Hh,349,Utility & Storage,2,Cleaning,2,Brushes / Sponges / Cloths,"134,226",368,1.4%,YTD
-Hh,349,Utility & Storage,2,Cleaning,3,Brooms / Mops / Dusters,"227,090",622,-0.7%,YTD
-Hh,349,Utility & Storage,2,Cleaning,4,Cleaning Appliances,0,0,0.0%,YTD
-Hh,349,Utility & Storage,2,Cleaning,5,Waste Bins,"1,826,511","5,004",23.8%,YTD
-Hh,349,Utility & Storage,3,Laundry,1,Ironing Boards & Accessories,"292,950",803,12.1%,YTD
-Hh,349,Utility & Storage,3,Laundry,2,Clothes Drying,"334,558",917,-0.6%,YTD
-Hh,349,Utility & Storage,3,Laundry,3,Laundry Hampers,"1,552,490","4,253",27.2%,YTD
-Hh,349,Utility & Storage,3,Laundry,4,Laundry Accessories,"100,510",275,23.2%,YTD
-Hh,349,Utility & Storage,4,Utility,1,DIY,0,0,0.0%,YTD
-Hh,350,Festive,1,Christmas,1,Trees,0,0,0.0%,YTD
-Hh,350,Festive,1,Christmas,2,Christmas Candles & Pot Pouri,0,0,0.0%,YTD
-Hh,350,Festive,1,Christmas,3,Christmas Decorations,337,1,0.0%,YTD
-Hh,350,Festive,1,Christmas,4,Christmas Lighting,0,0,0.0%,YTD
-Hh,350,Festive,1,Christmas,5,Christmas Textiles,0,0,0.0%,YTD
-Hh,350,Festive,1,Christmas,6,Christmas Tabletop,0,0,0.0%,YTD
-Hh,350,Festive,2,Festivals,1,Festive Decorations,0,0,0.0%,YTD
-Hh,350,Festive,2,Festivals,2,Festive Lighting,0,0,0.0%,YTD
-Hh,351,Cash Tills,1,Cash Tills,1,Cash Tills,"882,713","2,418",17.8%,YTD
-Hh,353,Make to Order(SORT),1,Window treatment,1,,0,0,0.0%,YTD
-Hh,353,Make to Order(SORT),1,Window treatment,2,Curtain,"372,162","1,020",152.2%,YTD
-Hh,353,Make to Order(SORT),1,Window treatment,3,Blinds,"15,936",44,-44.5%,YTD
-Kids,361,Kids Furniture,1,Kids Beds,1,Mid Sleepers & Loft Beds,"84,826",232,31.3%,YTD
-Kids,361,Kids Furniture,1,Kids Beds,2,Bunk Bed,"833,778","2,284",-12.1%,YTD
-Kids,361,Kids Furniture,1,Kids Beds,3,Kids Beds,"2,388,116","6,543",-5.9%,YTD
-Kids,361,Kids Furniture,1,Kids Beds,4,Toddler Beds,"222,599",610,17.6%,YTD
-Kids,361,Kids Furniture,2,Room Furniture & Storage,1,Kids Wardrobes,"1,549,749","4,246",0.4%,YTD
-Kids,361,Kids Furniture,2,Room Furniture & Storage,2,Kids Chest Of Drawers,"308,505",845,12.8%,YTD
-Kids,361,Kids Furniture,2,Room Furniture & Storage,3,Kids Night Stand,"391,015","1,071",-1.9%,YTD
-Kids,361,Kids Furniture,2,Room Furniture & Storage,4,Kids Dressing Tables & Mirrors,"506,015","1,386",25.2%,YTD
-Kids,361,Kids Furniture,2,Room Furniture & Storage,5,Kids Underbed,"76,570",210,-37.9%,YTD
-Kids,361,Kids Furniture,2,Room Furniture & Storage,6,Kids Bookcases,"143,774",394,9.6%,YTD
-Kids,361,Kids Furniture,2,Room Furniture & Storage,7,Kids Desks,"672,079","1,841",21.0%,YTD
-Kids,361,Kids Furniture,2,Room Furniture & Storage,8,Kids Chairs & Stools,"553,128","1,515",112.4%,YTD
-Kids,361,Kids Furniture,2,Room Furniture & Storage,9,Kids Bedroom Accessories,"56,893",156,-38.1%,YTD
-Kids,361,Kids Furniture,2,Room Furniture & Storage,10,Kids Storage,"75,898",208,16.0%,YTD
-Kids,361,Kids Furniture,3,Mattresses,1,Teens Mattresses,"53,411",146,-35.7%,YTD
-Kids,361,Kids Furniture,3,Mattresses,2,Kids Mattresses,"400,245","1,097",0.1%,YTD
-Kids,361,Kids Furniture,3,Mattresses,3,Nursery Mattresses,"174,040",477,21.8%,YTD
-Kids,361,Kids Furniture,4,Nursery,1,Cots,"210,367",576,42.1%,YTD
-Kids,361,Kids Furniture,4,Nursery,2,Nursery Wardrobe,"43,903",120,-0.1%,YTD
-Kids,361,Kids Furniture,4,Nursery,3,Nursery Chest of Drawers,"45,423",124,23.8%,YTD
-Kids,361,Kids Furniture,4,Nursery,4,Nursery Storage & Accessories,0,0,0.0%,YTD
-Kids,362,Room Decor,1,Lighting,1,Table Lamps,"372,520","1,021",16.1%,YTD
-Kids,362,Room Decor,1,Lighting,2,Floor Lamps,"1,162",3,-80.0%,YTD
-Kids,362,Room Decor,1,Lighting,3,Ceiling Lamps,"2,722",7,-66.7%,YTD
-Kids,362,Room Decor,1,Lighting,4,Core Electrical,0,0,0.0%,YTD
-Kids,362,Room Decor,1,Lighting,5,Decorative Lighting,"152,302",417,114.4%,YTD
-Kids,362,Room Decor,2,Decorative,1,Frames,"157,410",431,1.0%,YTD
-Kids,362,Room Decor,2,Decorative,2,Clocks,"8,380",23,-59.0%,YTD
-Kids,362,Room Decor,2,Decorative,3,Mirrors,"80,342",220,-13.0%,YTD
-Kids,362,Room Decor,2,Decorative,4,Wall Decor,"98,867",271,12.2%,YTD
-Kids,362,Room Decor,3,Floor Covering,1,Rugs,"173,751",476,24.0%,YTD
-Kids,362,Room Decor,3,Floor Covering,2,Play Mats,"77,092",211,-3.9%,YTD
-Kids,362,Room Decor,3,Floor Covering,3,Floor Seating,"180,220",494,-0.8%,YTD
-Kids,363,Soft Furnishing,1,Bed Linen,1,Duvets,"7,614",21,-36.4%,YTD
-Kids,363,Soft Furnishing,1,Bed Linen,2,Pillows,"56,915",156,-12.7%,YTD
-Kids,363,Soft Furnishing,1,Bed Linen,3,Mattress Toppers,0,0,0.0%,YTD
-Kids,363,Soft Furnishing,1,Bed Linen,4,Comforter Sets,"1,766,777","4,840",13.7%,YTD
-Kids,363,Soft Furnishing,1,Bed Linen,5,Duvet Covers,"40,487",111,-31.8%,YTD
-Kids,363,Soft Furnishing,1,Bed Linen,6,Sheets,"394,602","1,081",10.3%,YTD
-Kids,363,Soft Furnishing,1,Bed Linen,7,Pillow Case,"92,207",253,17.2%,YTD
-Kids,363,Soft Furnishing,1,Bed Linen,8,Blankets & Quilts,"299,604",821,29.2%,YTD
-Kids,363,Soft Furnishing,1,Bed Linen,9,Bed Accessories,"63,073",173,3.2%,YTD
-Kids,363,Soft Furnishing,1,Bed Linen,10,Cushions,"288,944",792,32.1%,YTD
-Kids,363,Soft Furnishing,2,Window Treatments,1,Curtains,780,2,-94.0%,YTD
-Kids,363,Soft Furnishing,2,Window Treatments,2,Blinds,0,0,0.0%,YTD
-Kids,363,Soft Furnishing,2,Window Treatments,3,Poles & Accessories,0,0,-100.0%,YTD
-Kids,364,Utility & Storage,1,Bath,1,Towels & Bathrobes,"136,125",373,8.5%,YTD
-Kids,364,Utility & Storage,1,Bath,2,Bath Accessories,"658,804","1,805",8.0%,YTD
-Kids,364,Utility & Storage,2,Storage,1,Hangers,"125,134",343,11.6%,YTD
-Kids,364,Utility & Storage,2,Storage,2,Storage,"643,556","1,763",28.6%,YTD
-Kids,364,Utility & Storage,3,Eat & Drink,1,Tableware,"138,922",381,-0.4%,YTD
-Kids,364,Utility & Storage,3,Eat & Drink,2,Water Bottles & Lunchboxes,"332,403",911,57.8%,YTD
-Kids,364,Utility & Storage,3,Eat & Drink,3,Food Storage,0,0,0.0%,YTD
-Kids,364,Utility & Storage,4,Safety,1,Child Safety,0,0,0.0%,YTD
-Kids,364,Utility & Storage,5,Luggage,1,Travel Gear,699,2,-88.9%,YTD
-Kids,364,Utility & Storage,5,Luggage,2,School Gear,"18,637",51,-4.5%,YTD
-Kids,365,Toys & Activities,1,Kids Toys,1,Soft Toys,"180,297",494,3.2%,YTD
-Kids,365,Toys & Activities,1,Kids Toys,2,Hard Toys,"120,813",331,-5.6%,YTD
-Kids,365,Toys & Activities,2,Activities,1,Tents,"41,875",115,-50.1%,YTD
-Kids,365,Toys & Activities,2,Activities,2,Learning,"147,161",403,-19.3%,YTD
-Kids,365,Toys & Activities,2,Activities,3,Outdoor Accessories,0,0,0.0%,YTD
-Kids,366,Cash Tills,1,Cash Tills,1,Cash Tills,"86,580",237,1.5%,YTD
-Kids,367,Festive,1,Festivals,1,Christmas,0,0,0.0%,YTD
-Kids,367,Festive,1,Festivals,2,Decorations & Accessories,0,0,0.0%,YTD
-SORT-Furniture,373,SORT-Living,1,Outdoor,1,,0,0,0.0%,YTD
-SORT-Furniture,373,SORT-Living,1,Outdoor,2,Outdoor Lounge,0,0,0.0%,YTD
-SORT-Furniture,373,SORT-Living,2,HOSO,1,Bookcases & Storage,0,0,0.0%,YTD
-SORT-Furniture,373,SORT-Living,2,HOSO,2,Desks,0,0,0.0%,YTD
-SORT-Furniture,373,SORT-Living,2,HOSO,3,Study Chairs,0,0,0.0%,YTD
-SORT-Furniture,373,SORT-Living,3,Living Case Goods,1,Benches & Ottomans,0,0,0.0%,YTD
-SORT-Furniture,373,SORT-Living,3,Living Case Goods,2,Console & Mirror,0,0,0.0%,YTD
-SORT-Furniture,373,SORT-Living,3,Living Case Goods,3,Media Units,0,0,0.0%,YTD
-SORT-Furniture,373,SORT-Living,3,Living Case Goods,4,,0,0,0.0%,YTD
-SORT-Furniture,373,SORT-Living,3,Living Case Goods,5,,0,0,0.0%,YTD
-SORT-Furniture,373,SORT-Living,3,Living Case Goods,6,Shelves,0,0,0.0%,YTD
-SORT-Furniture,5023,SORT-Bedroom,1,Bed Sets,1,King Bed Sets,0,0,0.0%,YTD
-SORT-Furniture,5023,SORT-Bedroom,1,Bed Sets,2,Super King Bed Sets,0,0,0.0%,YTD
-SORT-Furniture,5023,SORT-Bedroom,2,Bedroom Storage,1,,0,0,0.0%,YTD
-SORT-Furniture,5023,SORT-Bedroom,2,Bedroom Storage,2,,0,0,0.0%,YTD
-SORT-Furniture,5023,SORT-Bedroom,2,Bedroom Storage,3,Mirror & Stool,0,0,0.0%,YTD
-SORT-Furniture,5023,SORT-Bedroom,2,Bedroom Storage,4,,0,0,0.0%,YTD
-SORT-Furniture,5023,SORT-Bedroom,2,Bedroom Storage,5,,0,0,0.0%,YTD
-SORT-Furniture,5023,SORT-Bedroom,2,Bedroom Storage,6,Shoe Racks,0,0,0.0%,YTD
-SORT-Furniture,5023,SORT-Bedroom,2,Bedroom Storage,7,Vanity,0,0,0.0%,YTD
-SORT-Furniture,5023,SORT-Bedroom,3,Beds,1,,0,0,0.0%,YTD
-SORT-Furniture,5023,SORT-Bedroom,3,Beds,2,King Bed,0,0,0.0%,YTD
-SORT-Furniture,5023,SORT-Bedroom,3,Beds,3,,0,0,0.0%,YTD
-SORT-Furniture,5023,SORT-Bedroom,3,Beds,4,Queen Bed,0,0,0.0%,YTD
-SORT-Furniture,5023,SORT-Bedroom,3,Beds,5,,0,0,0.0%,YTD
-SORT-Furniture,5023,SORT-Bedroom,3,Beds,6,Super King Bed,0,0,0.0%,YTD
-SORT-Furniture,5023,SORT-Bedroom,5,Beds,1,,0,0,0.0%,YTD
-SORT-Furniture,5023,SORT-Bedroom,5,Beds,2,,0,0,0.0%,YTD
-SORT-Furniture,5023,SORT-Bedroom,5,Beds,3,,0,0,0.0%,YTD
-SORT-Furniture,5023,SORT-Bedroom,5,Beds,4,,0,0,0.0%,YTD
-SORT-Furniture,5023,SORT-Bedroom,5,Beds,5,6 Door Wardrobe,0,0,0.0%,YTD
-SORT-Furniture,5024,SORT-Dining,1,Serving & Storage,1,,0,0,0.0%,YTD
-SORT-Furniture,5024,SORT-Dining,1,Serving & Storage,2,Buffet & Hutch,0,0,0.0%,YTD
-SORT-Furniture,5024,SORT-Dining,2,Tables & Chairs,1,10 Seater & Above,0,0,0.0%,YTD
-SORT-Furniture,5024,SORT-Dining,2,Tables & Chairs,2,,0,0,0.0%,YTD
-SORT-Furniture,5024,SORT-Dining,2,Tables & Chairs,3,,0,0,0.0%,YTD
-SORT-Furniture,5024,SORT-Dining,2,Tables & Chairs,4,6 Seater,0,0,0.0%,YTD
-SORT-Furniture,5024,SORT-Dining,2,Tables & Chairs,5,8 Seater,0,0,0.0%,YTD
-SORT-Furniture,5024,SORT-Dining,2,Tables & Chairs,6,,0,0,0.0%,YTD
-SORT-Furniture,5024,SORT-Dining,2,Tables & Chairs,7,Chairs,0,0,0.0%,YTD
-SORT-Furniture,5024,SORT-Dining,2,Tables & Chairs,8,Tea Table Sets,0,0,0.0%,YTD
-SORT-Furniture,5025,SORT-Sofas & Tables,1,CT / ET,1,Coffee Tables,0,0,0.0%,YTD
-SORT-Furniture,5025,SORT-Sofas & Tables,1,CT / ET,2,End Tables,0,0,0.0%,YTD
-SORT-Furniture,5025,SORT-Sofas & Tables,2,Fabric Sofas,1,Fabric Corners,0,0,0.0%,YTD
-SORT-Furniture,5025,SORT-Sofas & Tables,2,Fabric Sofas,2,Fabric Sets,0,0,0.0%,YTD
-SORT-Furniture,5025,SORT-Sofas & Tables,2,Fabric Sofas,3,Fabric Sofas,0,0,0.0%,YTD
-SORT-Furniture,5025,SORT-Sofas & Tables,3,Individual Sofas,1,Accent Chairs,0,0,0.0%,YTD
-SORT-Furniture,5025,SORT-Sofas & Tables,3,Individual Sofas,2,Sofa Bed,0,0,0.0%,YTD
-SORT-Furniture,5025,SORT-Sofas & Tables,4,Modular Sofas,1,,0,0,0.0%,YTD
-SORT-Furniture,5025,SORT-Sofas & Tables,4,Modular Sofas,2,Modular Recliners,0,0,0.0%,YTD
-SORT-Furniture,5025,SORT-Sofas & Tables,5,Modular Sofas,1,Non-Fabric Corners,0,0,0.0%,YTD
-SORT-Furniture,5025,SORT-Sofas & Tables,5,Modular Sofas,2,Non-Fabric Sofas,0,0,0.0%,YTD
-SORT-Furniture,5025,SORT-Sofas & Tables,6,Recliners,1,Fabric Recliner,0,0,0.0%,YTD
-SORT-Furniture,5025,SORT-Sofas & Tables,6,Recliners,2,Non-Fabric Recliner,0,0,0.0%,YTD
-SORT-House Hold,369,SORT-Soft Furnishing,1,Cushions,1,Bean Bag,0,0,0.0%,YTD
-SORT-House Hold,370,SORT-Kitchen,1,Cookware,1,Bakeware,0,0,0.0%,YTD
-SORT-House Hold,370,SORT-Kitchen,1,Cookware,2,Cookware Sets,0,0,0.0%,YTD
-SORT-House Hold,370,SORT-Kitchen,1,Cookware,3,Pots & Pans,-35,0,0.0%,YTD
-SORT-House Hold,370,SORT-Kitchen,2,,1,,0,0,0.0%,YTD
-SORT-House Hold,370,SORT-Kitchen,3,Kitchen Storage,1,Food Storage & Bottles,0,0,0.0%,YTD
-SORT-House Hold,370,SORT-Kitchen,4,Kitchenwares,1,Kitchen Accessories,0,0,0.0%,YTD
-SORT-House Hold,370,SORT-Kitchen,4,Kitchenwares,2,Kitchen Appliances,0,0,0.0%,YTD
-SORT-House Hold,370,SORT-Kitchen,4,Kitchenwares,3,Kitchen Knives & Blocks,0,0,0.0%,YTD
-SORT-House Hold,370,SORT-Kitchen,4,Kitchenwares,4,,0,0,0.0%,YTD
-SORT-House Hold,370,SORT-Kitchen,4,Kitchenwares,5,Kitchen Utensils,0,0,0.0%,YTD
-SORT-House Hold,371,SORT-Soft Furnishing,1,Bed Linen,2,,0,0,0.0%,YTD
-SORT-House Hold,371,SORT-Soft Furnishing,1,Bed Linen,3,,0,0,0.0%,YTD
-SORT-House Hold,371,SORT-Soft Furnishing,1,Bed Linen,4,Fitted Sheets,0,0,0.0%,YTD
-SORT-House Hold,371,SORT-Soft Furnishing,1,Bed Linen,5,Pillow Case,0,0,0.0%,YTD
-SORT-House Hold,371,SORT-Soft Furnishing,1,Bed Linen,6,Bedspread,0,0,0.0%,YTD
-SORT-House Hold,371,SORT-Soft Furnishing,2,Bed Protection,1,,0,0,0.0%,YTD
-SORT-House Hold,371,SORT-Soft Furnishing,2,Bed Protection,2,Mattress & Pillow Protectors,0,0,0.0%,YTD
-SORT-House Hold,371,SORT-Soft Furnishing,3,Cushions,1,,0,0,0.0%,YTD
-SORT-House Hold,371,SORT-Soft Furnishing,3,Cushions,2,Filled Cushions,0,0,0.0%,YTD
-SORT-House Hold,371,SORT-Soft Furnishing,4,Duvets & Pillows,1,,0,0,0.0%,YTD
-SORT-House Hold,371,SORT-Soft Furnishing,4,Duvets & Pillows,2,Pillows,0,0,0.0%,YTD
-SORT-House Hold,371,SORT-Soft Furnishing,5,Throws & Blankets,1,Throws,0,0,0.0%,YTD
-SORT-House Hold,371,SORT-Soft Furnishing,5,Throws & Blankets,2,Blankets,0,0,0.0%,YTD
-SORT-House Hold,372,SORT-Tabletop,1,Dinnerware,1,,0,0,0.0%,YTD
-SORT-House Hold,372,SORT-Tabletop,1,Dinnerware,2,,0,0,0.0%,YTD
-SORT-House Hold,372,SORT-Tabletop,1,Dinnerware,3,,0,0,0.0%,YTD
-SORT-House Hold,372,SORT-Tabletop,1,Dinnerware,4,,0,0,0.0%,YTD
-SORT-House Hold,372,SORT-Tabletop,1,Dinnerware,5,Single Dinnerware,0,0,0.0%,YTD
-SORT-House Hold,372,SORT-Tabletop,2,Drinkware,1,Drink Serveware,0,0,-100.0%,YTD
-SORT-House Hold,372,SORT-Tabletop,2,Drinkware,2,Glasses & Sets,0,0,0.0%,YTD
-SORT-House Hold,372,SORT-Tabletop,2,Drinkware,3,,0,0,0.0%,YTD
-SORT-House Hold,372,SORT-Tabletop,2,Drinkware,4,Tea & Coffee,-21,0,-93.3%,YTD
-SORT-House Hold,372,SORT-Tabletop,3,Serve,1,,0,0,0.0%,YTD
-SORT-House Hold,372,SORT-Tabletop,4,Serve,1,,0,0,0.0%,YTD
-SORT-House Hold,372,SORT-Tabletop,5,Serve,1,Food Warmers,0,0,0.0%,YTD
-SORT-House Hold,372,SORT-Tabletop,5,Serve,2,Serveware,-59,0,0.0%,YTD
-SORT-House Hold,372,SORT-Tabletop,5,Serve,3,Trays,0,0,-100.0%,YTD
-SORT-House Hold,372,SORT-Tabletop,6,Table Linen,1,Napkins & Accessories,0,0,0.0%,YTD
-SORT-House Hold,5026,SORT-Home Decor,1,Decor Accessories,1,,0,0,0.0%,YTD
-SORT-House Hold,5026,SORT-Home Decor,1,Decor Accessories,1,,0,0,0.0%,YTD
-SORT-House Hold,5026,SORT-Home Decor,2,Decor Accessories,1,,0,0,0.0%,YTD
-SORT-House Hold,5026,SORT-Home Decor,2,Decor Accessories,2,,0,0,0.0%,YTD
-SORT-House Hold,5026,SORT-Home Decor,2,Decor Accessories,3,Towels,0,0,0.0%,YTD
-SORT-House Hold,5027,SORT-Home Decor,1,Decor Accessories,1,Boxes & Trays,0,0,0.0%,YTD
-SORT-House Hold,5027,SORT-Home Decor,1,Decor Accessories,2,Candle Holders,0,0,0.0%,YTD
-SORT-House Hold,5027,SORT-Home Decor,1,Decor Accessories,3,,0,0,0.0%,YTD
-SORT-House Hold,5027,SORT-Home Decor,1,Decor Accessories,4,,0,0,0.0%,YTD
-SORT-House Hold,5027,SORT-Home Decor,1,Decor Accessories,5,Vases & Bowls,0,0,0.0%,YTD
-SORT-House Hold,5027,SORT-Home Decor,2,Home Fragrance,1,,0,0,0.0%,YTD
-SORT-House Hold,5027,SORT-Home Decor,2,Home Fragrance,2,Diffusers & Burners,0,0,0.0%,YTD
-SORT-House Hold,5027,SORT-Home Decor,3,Indoor Garden,1,,0,0,0.0%,YTD
-SORT-House Hold,5027,SORT-Home Decor,3,Indoor Garden,2,,0,0,0.0%,YTD
-SORT-House Hold,5027,SORT-Home Decor,3,Indoor Garden,3,,0,0,0.0%,YTD
-SORT-House Hold,5027,SORT-Home Decor,3,Indoor Garden,4,Pots & Planters,0,0,0.0%,YTD
-SORT-House Hold,5027,SORT-Home Decor,3,Indoor Garden,5,,0,0,0.0%,YTD
-SORT-House Hold,5027,SORT-Home Decor,3,Indoor Garden,6,Trees,0,0,0.0%,YTD
-SORT-House Hold,5028,SORT-Lighting,1,Core Electrical,1,,0,0,0.0%,YTD
-SORT-House Hold,5028,SORT-Lighting,1,Core Electrical,2,,0,0,0.0%,YTD
-SORT-House Hold,5028,SORT-Lighting,1,Core Electrical,3,Electrical Accessories,0,0,0.0%,YTD
-SORT-House Hold,5028,SORT-Lighting,2,Lamps,1,Ceiling Lamp,0,0,0.0%,YTD
-SORT-House Hold,5028,SORT-Lighting,2,Lamps,2,Floor Lamp,0,0,0.0%,YTD
-SORT-House Hold,5028,SORT-Lighting,2,Lamps,3,Table Lamp,0,0,0.0%,YTD
-SORT-House Hold,5028,SORT-Lighting,2,Lamps,4,Wall Lamp,0,0,0.0%,YTD
-SORT-House Hold,5028,SORT-Lighting,3,Lights,2,Solar,0,0,0.0%,YTD
-SORT-House Hold,5029,SORT-Utility & Storage,1,Cleaning,1,Brooms / Mops / Dusters,0,0,0.0%,YTD
-SORT-House Hold,5029,SORT-Utility & Storage,1,Cleaning,2,,0,0,0.0%,YTD
-SORT-House Hold,5029,SORT-Utility & Storage,1,Cleaning,3,,0,0,0.0%,YTD
-SORT-House Hold,5029,SORT-Utility & Storage,1,Cleaning,4,Waste Bins,0,0,0.0%,YTD
-SORT-House Hold,5029,SORT-Utility & Storage,2,Storage,1,,0,0,0.0%,YTD
-SORT-House Hold,5029,SORT-Utility & Storage,2,Laundry,2,Ironing Boards & Accessories,0,0,0.0%,YTD
-SORT-House Hold,5029,SORT-Utility & Storage,3,Storage,1,,0,0,0.0%,YTD
-SORT-House Hold,5029,SORT-Utility & Storage,3,Storage,2,,0,0,0.0%,YTD
-SORT-House Hold,5029,SORT-Utility & Storage,3,Storage,3,,0,0,0.0%,YTD
-SORT-House Hold,5029,SORT-Utility & Storage,3,Storage,4,,0,0,0.0%,YTD
-SORT-House Hold,5029,SORT-Utility & Storage,3,Storage,5,,0,0,0.0%,YTD
-SORT-House Hold,5029,SORT-Utility & Storage,3,Storage,6,,0,0,0.0%,YTD
-SORT-House Hold,5029,SORT-Utility & Storage,3,Storage,7,Shoe Storage,0,0,0.0%,YTD
-SORT-House Hold,5029,SORT-Utility & Storage,3,Storage,8,,0,0,0.0%,YTD
-SORT-House Hold,5029,SORT-Utility & Storage,3,Storage,9,Tall Hangers & Rails,0,0,0.0%,YTD
-SORT-House Hold,5029,SORT-Utility & Storage,3,Storage,10,,0,0,0.0%,YTD
-SORT-House Hold,5029,SORT-Utility & Storage,3,Storage,11,Utility Storage,0,0,0.0%,YTD
-SORT-House Hold,5030,SORT-Wall Decor,1,,,,0,0,0.0%,YTD
-SORT-House Hold,5030,SORT-Wall Decor,2,Mirrors,1,Floor & Wall Mirrors,0,0,0.0%,YTD
-SORT-House Hold,5030,SORT-Wall Decor,3,,,,0,0,0.0%,YTD
-SORT-House Hold,5030,SORT-Wall Decor,4,Wall Art,1,Wall Art & Frames,0,0,0.0%,YTD
-SORT-House Hold,5039,SORT-Appliances,1,,1,,0,0,0.0%,YTD
-SORT-House Hold,5039,SORT-Appliances,1,Large Appliances,2,Cooking Ranges,0,0,0.0%,YTD
-SORT-House Hold,5039,SORT-Appliances,1,Large Appliances,3,,0,0,0.0%,YTD
-SORT-House Hold,5039,SORT-Appliances,1,Large Appliances,4,Refrigerators & Freezers,0,0,0.0%,YTD
-SORT-House Hold,5039,SORT-Appliances,2,Home Appliances,1,Vacuum Cleaners,0,0,0.0%,YTD
-SORT-House Hold,5039,SORT-Appliances,2,Home Appliances,2,,0,0,0.0%,YTD
-SORT-House Hold,5039,SORT-Appliances,2,Home Appliances,3,,0,0,0.0%,YTD
-SORT-House Hold,5039,SORT-Appliances,2,Home Appliances,4,Room Heaters,0,0,0.0%,YTD
-SORT-House Hold,5039,SORT-Appliances,2,Home Appliances,5,,0,0,0.0%,YTD
-SORT-House Hold,5039,SORT-Appliances,2,Home Appliances,6,,0,0,0.0%,YTD
-SORT-House Hold,5039,SORT-Appliances,2,Home Appliances,7,,0,0,0.0%,YTD
-SORT-House Hold,5039,SORT-Appliances,2,Home Appliances,8,,0,0,0.0%,YTD
-SORT-House Hold,5039,SORT-Appliances,2,Home Appliances,9,,0,0,0.0%,YTD
-SORT-House Hold,5039,SORT-Appliances,2,Home Appliances,10,,0,0,0.0%,YTD
-SORT-House Hold,5039,SORT-Appliances,2,Home Appliances,11,Water Dispensers,0,0,0.0%,YTD
-SORT-House Hold,5039,SORT-Appliances,3,Kitchen Appliances,1,Microwave Ovens,0,0,0.0%,YTD
-SORT-House Hold,5039,SORT-Appliances,3,Kitchen Appliances,2,Air Fryers,0,0,0.0%,YTD
-SORT-House Hold,5039,SORT-Appliances,3,Kitchen Appliances,3,Food Processors,0,0,0.0%,YTD
-SORT-House Hold,5039,SORT-Appliances,3,Kitchen Appliances,4,Electric Kettles,0,0,0.0%,YTD
-SORT-House Hold,5039,SORT-Appliances,3,Kitchen Appliances,5,Coffee Machines,0,0,0.0%,YTD
-SORT-House Hold,5039,SORT-Appliances,3,Kitchen Appliances,6,Other Kitchen Appliances,0,0,0.0%,YTD
-SORT-House Hold,5039,SORT-Appliances,4,,,,0,0,0.0%,YTD
-SORT-House Hold,5039,SORT-Appliances,5,,,,0,0,0.0%,YTD
-SORT-House Hold,5039,SORT-Appliances,6,,,,0,0,0.0%,YTD
-SORT-House Hold,5039,SORT-Appliances,7,Smart Home,1,Smart Lighting,0,0,0.0%,YTD
-SORT-House Hold,5039,SORT-Appliances,7,Smart Home,2,Security Cameras,0,0,0.0%,YTD
-SORT-House Hold,5039,SORT-Appliances,7,Smart Home,3,,0,0,0.0%,YTD
-SORT-Kids,5031,SORT-Kids Furniture,1,Kids Beds,1,,0,0,0.0%,YTD
-SORT-Kids,5031,SORT-Kids Furniture,1,Kids Beds,2,Kids Beds,0,0,0.0%,YTD
-SORT-Kids,5031,SORT-Kids Furniture,1,Kids Beds,3,,0,0,0.0%,YTD
-SORT-Kids,5031,SORT-Kids Furniture,1,Kids Beds,4,Toddler Beds,0,0,0.0%,YTD
-SORT-Kids,5031,SORT-Kids Furniture,3,Nursery,1,Cots,0,0,0.0%,YTD
-SORT-Kids,5031,SORT-Kids Furniture,4,Room Furniture & Storage,1,,0,0,0.0%,YTD
-SORT-Kids,5031,SORT-Kids Furniture,4,Room Furniture & Storage,2,Kids Bookcases,0,0,0.0%,YTD
-SORT-Kids,5031,SORT-Kids Furniture,4,Room Furniture & Storage,3,,0,0,0.0%,YTD
-SORT-Kids,5031,SORT-Kids Furniture,4,Room Furniture & Storage,4,,0,0,0.0%,YTD
-SORT-Kids,5031,SORT-Kids Furniture,4,Room Furniture & Storage,5,,0,0,0.0%,YTD
-SORT-Kids,5031,SORT-Kids Furniture,4,Room Furniture & Storage,6,,0,0,0.0%,YTD
-SORT-Kids,5031,SORT-Kids Furniture,4,Room Furniture & Storage,7,,0,0,0.0%,YTD
-SORT-Kids,5031,SORT-Kids Furniture,4,Room Furniture & Storage,8,Kids Storage,0,0,0.0%,YTD
-SORT-Kids,5032,SORT-Room Decor,2,Floor Covering,1,,0,0,0.0%,YTD
-SORT-Kids,5032,SORT-Room Decor,2,Floor Covering,2,,0,0,0.0%,YTD
-SORT-Kids,5032,SORT-Room Decor,3,Lighting,1,,0,0,0.0%,YTD
-SORT-Kids,5032,SORT-Room Decor,3,Lighting,3,,0,0,0.0%,YTD
-SORT-Kids,5032,SORT-Room Decor,3,Lighting,4,Table Lamps,0,0,0.0%,YTD
-SORT-Kids,5033,SORT-Soft Furnishing,1,Bed Linen,1,,0,0,0.0%,YTD
-SORT-Kids,5033,SORT-Soft Furnishing,1,Bed Linen,2,Blankets & Quilts,0,0,0.0%,YTD
-SORT-Kids,5034,SORT-Toys & Activities,1,Activities,1,Learning,0,0,0.0%,YTD
-SORT-Kids,5034,SORT-Toys & Activities,1,Activities,2,Tents,0,0,0.0%,YTD
-SORT-Kids,5034,SORT-Toys & Activities,2,Kids Toys,1,Hard Toys,-8,0,0.0%,YTD
-SORT-Kids,5035,SORT-Utility & Storage,2,Eat & Drink,1,Food Storage,0,0,0.0%,YTD
-SORT-Kids,5035,SORT-Utility & Storage,2,Eat & Drink,2,Tableware,0,0,0.0%,YTD
-SORT-Kids,5035,SORT-Utility & Storage,2,Eat & Drink,3,Water Bottles & Lunchboxes,0,0,0.0%,YTD
-SORT-Kids,5036,SORT-Travel,3,Eat & Drink,1,Travel Accessories,0,0,0.0%,YTD
-,,,,,,,,,,
-,,,,,,,,,,
+Division,Dept Code,Dept Name,Class Code,Class name,Sub Class Code,Subclass Name,Cy_Sale_Value,SPD,Growth%,Year
+Fur,331,Bedroom,1,Beds,1,Super King Bed,"337,486",925,46.90%,YTD
+Fur,331,Bedroom,1,Beds,2,King Bed,"3,755,929","10,290",17.90%,YTD
+Fur,331,Bedroom,1,Beds,3,Queen Bed,"1,443,262","3,954",56.10%,YTD
+Fur,331,Bedroom,1,Beds,4,Single Bed,"1,674,922","4,589",20.90%,YTD
+Fur,331,Bedroom,1,Beds,5,Day Bed,"85,961",236,-10.90%,YTD
+Fur,331,Bedroom,1,Beds,6,Modular Bedroom,"1,704,982","4,671",-15.30%,YTD
+Fur,331,Bedroom,2,Bedroom Storage,1,Chest Of Drawers,"1,261,823","3,457",12.70%,YTD
+Fur,331,Bedroom,2,Bedroom Storage,2,Night Stands,"2,997,988","8,214",21.70%,YTD
+Fur,331,Bedroom,2,Bedroom Storage,3,Shoe Racks,"797,032","2,184",11.20%,YTD
+Fur,331,Bedroom,2,Bedroom Storage,4,Benches & Storage,"402,304","1,102",48.50%,YTD
+Fur,331,Bedroom,2,Bedroom Storage,5,Safe,"242,515",664,-7.10%,YTD
+Fur,331,Bedroom,2,Bedroom Storage,6,Vanity,"3,814,389","10,450",12.20%,YTD
+Fur,331,Bedroom,2,Bedroom Storage,7,Mirror & Stool,"487,940","1,337",44.60%,YTD
+Fur,331,Bedroom,2,Bedroom Storage,8,Laundry Furniture,"11,773",32,2508.60%,YTD
+Fur,331,Bedroom,3,Bed Sets,1,Super King Bed Sets,"58,902",161,-60.30%,YTD
+Fur,331,Bedroom,3,Bed Sets,2,King Bed Sets,"915,248","2,508",-21.30%,YTD
+Fur,331,Bedroom,4,Wardrobes,1,2 Door Wardrobe,"206,216",565,225.10%,YTD
+Fur,331,Bedroom,4,Wardrobes,2,3 Door Wardrobe,"563,237","1,543",80.80%,YTD
+Fur,331,Bedroom,4,Wardrobes,3,4 Door Wardrobe,"273,765",750,0.20%,YTD
+Fur,331,Bedroom,4,Wardrobes,4,5 Door Warbrobe,"1,557,429","4,267",6.70%,YTD
+Fur,331,Bedroom,4,Wardrobes,5,6 Door Wardrobe,"2,780,061","7,617",-1.20%,YTD
+Fur,331,Bedroom,4,Wardrobes,6,Sliding Door Wardrobe,"902,730","2,473",-13.50%,YTD
+Fur,331,Bedroom,4,Wardrobes,7,Modular Wardrobe,"212,864",583,-39.80%,YTD
+Fur,331,Bedroom,5,Mattresses,1,Super King Mattresses,"295,793",810,1.60%,YTD
+Fur,331,Bedroom,5,Mattresses,2,King Mattresses,"1,901,423","5,209",5.90%,YTD
+Fur,331,Bedroom,5,Mattresses,3,Queen Mattresses,"786,079","2,154",34.80%,YTD
+Fur,331,Bedroom,5,Mattresses,4,Single Mattresses,"1,634,254","4,477",-0.60%,YTD
+Fur,332,Dining,1,Tables & Chairs,1,10 Seater & Above,"1,459,377","3,998",-12.40%,YTD
+Fur,332,Dining,1,Tables & Chairs,2,8 Seater,"3,735,050","10,233",-4.30%,YTD
+Fur,332,Dining,1,Tables & Chairs,3,6 Seater,"3,361,305","9,209",-0.80%,YTD
+Fur,332,Dining,1,Tables & Chairs,4,4 Seater,"801,937","2,197",-2.70%,YTD
+Fur,332,Dining,1,Tables & Chairs,5,2 Seater,"78,643",215,-65.10%,YTD
+Fur,332,Dining,1,Tables & Chairs,6,Tea Table Sets,"198,796",545,53.60%,YTD
+Fur,332,Dining,1,Tables & Chairs,7,Chairs,"9,699,408","26,574",1.70%,YTD
+Fur,332,Dining,1,Tables & Chairs,8,Bar Chair & Stools,"321,033",880,-7.30%,YTD
+Fur,332,Dining,2,Serving & Storage,1,Buffet & Hutch,"20,417",56,878.70%,YTD
+Fur,332,Dining,2,Serving & Storage,2,Sideboards & Mirror,"2,874,017","7,874",-2.70%,YTD
+Fur,332,Dining,2,Serving & Storage,3,Bar Counter & Curios,"187,790",514,21.20%,YTD
+Fur,332,Dining,2,Serving & Storage,4,Kitchen Islands,"73,271",201,-48.10%,YTD
+Fur,333,Living,1,Living Case Goods,1,Media Units,"1,641,153","4,496",-14.80%,YTD
+Fur,333,Living,1,Living Case Goods,2,Benches & Ottomans,"976,856","2,676",-1.00%,YTD
+Fur,333,Living,1,Living Case Goods,3,Nesting & Accent Tables,"1,979,959","5,425",8.00%,YTD
+Fur,333,Living,1,Living Case Goods,4,Shelves,"392,245","1,075",1.90%,YTD
+Fur,333,Living,1,Living Case Goods,5,Console & Mirror,"1,380,120","3,781",9.30%,YTD
+Fur,333,Living,1,Living Case Goods,6,Serving Trolleys,"628,009","1,721",-4.40%,YTD
+Fur,333,Living,2,HOSO,1,Desks,"625,885","1,715",7.10%,YTD
+Fur,333,Living,2,HOSO,2,Bookcases & Storage,"155,193",425,34.70%,YTD
+Fur,333,Living,2,HOSO,3,Study Chairs,"488,829","1,339",48.30%,YTD
+Fur,333,Living,2,HOSO,4,Nest of Tables,0,0,0.00%,YTD
+Fur,333,Living,2,HOSO,5,Gaming Desks,"55,203",151,10.30%,YTD
+Fur,333,Living,2,HOSO,6,Gaming Chair,"91,741",251,56.70%,YTD
+Fur,333,Living,3,Outdoor,1,Outdoor Dining,"295,526",810,61.70%,YTD
+Fur,333,Living,3,Outdoor,2,Outdoor Lounge,"678,067","1,858",-34.70%,YTD
+Fur,333,Living,4,Home Office,1,Desks,0,0,0.00%,YTD
+Fur,333,Living,4,Home Office,2,Book Cases,0,0,0.00%,YTD
+Fur,334,Sofas & Tables,1,Fabric Sofas,1,Fabric Sets,0,0,0.00%,YTD
+Fur,334,Sofas & Tables,1,Fabric Sofas,2,Fabric Corners,"4,406,777","12,073",-6.10%,YTD
+Fur,334,Sofas & Tables,1,Fabric Sofas,3,Fabric Sofas,"17,255,203","47,275",-2.30%,YTD
+Fur,334,Sofas & Tables,2,Non-Fabric Sofas,1,Non-Fabric Sets,0,0,0.00%,YTD
+Fur,334,Sofas & Tables,2,Non-Fabric Sofas,2,Non-Fabric Corners,"54,262",149,-48.80%,YTD
+Fur,334,Sofas & Tables,2,Non-Fabric Sofas,3,Non-Fabric Sofas,"983,819","2,695",149.90%,YTD
+Fur,334,Sofas & Tables,3,Individual Sofas,1,Accent Chairs,"1,998,176","5,474",-13.30%,YTD
+Fur,334,Sofas & Tables,3,Individual Sofas,2,Sofa Bed,"1,259,118","3,450",14.90%,YTD
+Fur,334,Sofas & Tables,4,Recliners,1,Fabric Recliner,"3,495,228","9,576",8.70%,YTD
+Fur,334,Sofas & Tables,4,Recliners,2,Non-Fabric Recliner,"225,160",617,-38.00%,YTD
+Fur,334,Sofas & Tables,5,Modular Sofas,1,Fabric Modular,"14,157,897","38,789",25.10%,YTD
+Fur,334,Sofas & Tables,5,Modular Sofas,2,Non-Fabric Modular,0,0,0.00%,YTD
+Fur,334,Sofas & Tables,5,Modular Sofas,3,Modular Recliners,"853,317","2,338",37.50%,YTD
+Fur,334,Sofas & Tables,6,CT / ET,1,Coffee Tables,"4,822,942","13,214",13.20%,YTD
+Fur,334,Sofas & Tables,6,CT / ET,2,End Tables,"2,610,128","7,151",11.80%,YTD
+Hh,341,Lighting,1,Lamps,1,Table Lamp,"10,029,969","27,479",22.50%,YTD
+Hh,341,Lighting,1,Lamps,2,Floor Lamp,"3,446,294","9,442",2.10%,YTD
+Hh,341,Lighting,1,Lamps,3,Ceiling Lamp,"1,139,060","3,121",23.90%,YTD
+Hh,341,Lighting,1,Lamps,4,Wall Lamp,"46,793",128,0.70%,YTD
+Hh,341,Lighting,2,Lights,1,Decorative Lighting,"357,417",979,-0.30%,YTD
+Hh,341,Lighting,2,Lights,2,Solar,0,0,0.00%,YTD
+Hh,341,Lighting,3,Core Electrical,1,Bulbs,"1,175,451","3,220",4.30%,YTD
+Hh,341,Lighting,3,Core Electrical,2,Batteries,"171,811",471,-13.50%,YTD
+Hh,341,Lighting,3,Core Electrical,3,Electrical Accessories,"24,695",68,-10.40%,YTD
+Hh,342,Floor Covering,1,Rugs,1,Rugs,"4,707,434","12,897",6.70%,YTD
+Hh,342,Floor Covering,1,Rugs,2,Door Mats,"1,016,362","2,785",5.70%,YTD
+Hh,342,Floor Covering,2,Floor Accessories,1,Floor Accessories,"45,429",124,-23.10%,YTD
+Hh,343,Wall Decor,1,Wall Art,1,Wall Art & Frames,"5,335,028","14,617",8.10%,YTD
+Hh,343,Wall Decor,1,Wall Art,2,Wall Plaques,"517,621","1,418",-19.10%,YTD
+Hh,343,Wall Decor,1,Wall Art,3,Wall Treatments & Tapestries,"210,645",577,6.80%,YTD
+Hh,343,Wall Decor,2,Photo Frames,1,Photo Frames,"302,494",829,9.10%,YTD
+Hh,343,Wall Decor,3,Mirrors,1,Floor & Wall Mirrors,"4,303,580","11,791",3.50%,YTD
+Hh,343,Wall Decor,4,Clocks,1,Clocks,"551,877","1,512",-7.80%,YTD
+Hh,344,Soft Furnishing,1,Duvets & Pillows,1,Duvets,"1,160,698","3,180",13.70%,YTD
+Hh,344,Soft Furnishing,1,Duvets & Pillows,2,Pillows,"2,896,850","7,937",-3.40%,YTD
+Hh,344,Soft Furnishing,2,Bed Protection,1,Mattress Toppers,"740,800","2,030",3.20%,YTD
+Hh,344,Soft Furnishing,2,Bed Protection,2,Mattress & Pillow Protectors,"485,082","1,329",-8.30%,YTD
+Hh,344,Soft Furnishing,3,Bed Linen,1,Comforter Sets,"7,658,342","20,982",0.50%,YTD
+Hh,344,Soft Furnishing,3,Bed Linen,2,Duvet Covers,"2,086,650","5,717",32.20%,YTD
+Hh,344,Soft Furnishing,3,Bed Linen,3,Flat Sheets,"287,648",788,5.10%,YTD
+Hh,344,Soft Furnishing,3,Bed Linen,4,Fitted Sheets,"3,378,756","9,257",5.50%,YTD
+Hh,344,Soft Furnishing,3,Bed Linen,5,Pillow Case,"932,062","2,554",-0.50%,YTD
+Hh,344,Soft Furnishing,3,Bed Linen,6,Bedspread,"799,397","2,190",28.40%,YTD
+Hh,344,Soft Furnishing,3,Bed Linen,7,Bedding Accessories,"38,531",106,-14.20%,YTD
+Hh,344,Soft Furnishing,4,Throws & Blankets,1,Throws,"2,132,613","5,843",18.00%,YTD
+Hh,344,Soft Furnishing,4,Throws & Blankets,2,Blankets,"1,493,186","4,091",2.10%,YTD
+Hh,344,Soft Furnishing,5,Cushions,1,Covers,"1,846,436","5,059",-13.50%,YTD
+Hh,344,Soft Furnishing,5,Cushions,2,Filled Cushions,"5,498,293","15,064",49.00%,YTD
+Hh,344,Soft Furnishing,5,Cushions,3,Fillings,"1,086,271","2,976",9.80%,YTD
+Hh,344,Soft Furnishing,5,Cushions,4,Bean Bag,"201,900",553,4.20%,YTD
+Hh,344,Soft Furnishing,5,Cushions,5,Floor Cushions,"572,212","1,568",-12.90%,YTD
+Hh,344,Soft Furnishing,5,Cushions,6,Chair Pad,"106,633",292,-20.00%,YTD
+Hh,344,Soft Furnishing,6,Window Treatments,1,Curtains,"2,035,764","5,577",-19.80%,YTD
+Hh,344,Soft Furnishing,6,Window Treatments,2,Blinds,"533,857","1,463",-20.30%,YTD
+Hh,344,Soft Furnishing,6,Window Treatments,3,Poles,"729,816","1,999",-19.20%,YTD
+Hh,344,Soft Furnishing,6,Window Treatments,4,Window Accessories,"208,973",573,-17.40%,YTD
+Hh,345,Home Decor,1,Decor Accessories,1,Lanterns,"735,027","2,014",-7.20%,YTD
+Hh,345,Home Decor,1,Decor Accessories,2,Decor Accents,"3,064,866","8,397",-2.70%,YTD
+Hh,345,Home Decor,1,Decor Accessories,3,Vases & Bowls,"5,863,400","16,064",9.10%,YTD
+Hh,345,Home Decor,1,Decor Accessories,4,Candle Holders,"2,420,711","6,632",8.50%,YTD
+Hh,345,Home Decor,1,Decor Accessories,5,Boxes & Trays,"2,696,387","7,387",0.00%,YTD
+Hh,345,Home Decor,2,Home Fragrance,1,Candles,"2,358,037","6,460",2.70%,YTD
+Hh,345,Home Decor,2,Home Fragrance,2,Potpourri & Oils,"908,369","2,489",1.00%,YTD
+Hh,345,Home Decor,2,Home Fragrance,3,Revitalisers & Humidifiers,"402,672","1,103",7.90%,YTD
+Hh,345,Home Decor,2,Home Fragrance,4,Diffusers & Burners,"2,890,955","7,920",7.00%,YTD
+Hh,345,Home Decor,2,Home Fragrance,5,Gift Sets,"562,133","1,540",83.40%,YTD
+Hh,345,Home Decor,3,Indoor Garden,1,Stem Flowers,"1,181,372","3,237",14.60%,YTD
+Hh,345,Home Decor,3,Indoor Garden,2,Plants & Arrangements,"2,773,291","7,598",1.60%,YTD
+Hh,345,Home Decor,3,Indoor Garden,3,Fresh Flowers & Plants,0,0,0.00%,YTD
+Hh,345,Home Decor,3,Indoor Garden,4,Trees,"1,328,936","3,641",-0.60%,YTD
+Hh,345,Home Decor,3,Indoor Garden,5,Pots & Planters,"1,519,277","4,162",17.20%,YTD
+Hh,345,Home Decor,3,Indoor Garden,6,Fountains & Outdoor Accessories,"554,916","1,520",27.70%,YTD
+Hh,346,Tabletop,1,Dinnerware,1,50 + pcs set,"693,533","1,900",20.80%,YTD
+Hh,346,Tabletop,1,Dinnerware,2,40 - 49 pcs set,"552,061","1,512",31.30%,YTD
+Hh,346,Tabletop,1,Dinnerware,3,30 - 39 pcs set,"1,759,614","4,821",8.50%,YTD
+Hh,346,Tabletop,1,Dinnerware,4,12 - 29 pcs set,"947,623","2,596",8.40%,YTD
+Hh,346,Tabletop,1,Dinnerware,5,Single Dinnerware,"2,523,435","6,914",-0.80%,YTD
+Hh,346,Tabletop,2,Flatware,1,Cutlery Sets,"1,307,270","3,582",24.50%,YTD
+Hh,346,Tabletop,2,Flatware,2,Single Cutlery,"355,427",974,-8.30%,YTD
+Hh,346,Tabletop,3,Drinkware,1,Stemware,"429,554","1,177",12.20%,YTD
+Hh,346,Tabletop,3,Drinkware,2,Glasses & Sets,"852,978","2,337",10.70%,YTD
+Hh,346,Tabletop,3,Drinkware,3,Tea & Coffee,"1,627,836","4,460",9.20%,YTD
+Hh,346,Tabletop,3,Drinkware,4,Drink Serveware,"911,251","2,497",21.80%,YTD
+Hh,346,Tabletop,4,Serve,1,Serveware,"2,749,204","7,532",9.80%,YTD
+Hh,346,Tabletop,4,Serve,2,Food Warmers,"956,524","2,621",16.50%,YTD
+Hh,346,Tabletop,4,Serve,3,Trays,"531,048","1,455",-20.50%,YTD
+Hh,346,Tabletop,5,Table Linen,1,Table Cover,"339,144",929,23.80%,YTD
+Hh,346,Tabletop,5,Table Linen,2,Placemats,"1,246,634","3,415",11.10%,YTD
+Hh,346,Tabletop,5,Table Linen,3,Runners,"490,423","1,344",7.00%,YTD
+Hh,346,Tabletop,5,Table Linen,4,Napkins & Accessories,"1,100,615","3,015",-2.80%,YTD
+Hh,346,Tabletop,5,Table Linen,5,Chair Pad,0,0,0.00%,YTD
+Hh,346,Tabletop,6,Outdoor Dining,1,Outdoor Crockery,"92,707",254,-26.50%,YTD
+Hh,346,Tabletop,6,Outdoor Dining,2,Outdoor Cutlery,"27,396",75,-6.50%,YTD
+Hh,346,Tabletop,6,Outdoor Dining,3,Outdoor Drinkware,"16,977",47,-37.70%,YTD
+Hh,347,Kitchen,1,Kitchenwares,1,Kitchen Knives & Blocks,"328,542",900,28.50%,YTD
+Hh,347,Kitchen,1,Kitchenwares,2,Kitchen Accessories,"2,540,635","6,961",10.60%,YTD
+Hh,347,Kitchen,1,Kitchenwares,3,Kitchen Appliances,0,0,-100.00%,YTD
+Hh,347,Kitchen,1,Kitchenwares,4,Kitchen Utensils,"893,557","2,448",24.90%,YTD
+Hh,347,Kitchen,1,Kitchenwares,5,Kitchen Trolleys,"299,493",821,14.20%,YTD
+Hh,347,Kitchen,2,Cookware,1,Pots & Pans,"1,259,448","3,451",21.70%,YTD
+Hh,347,Kitchen,2,Cookware,2,Cookware Sets,"249,884",685,-6.80%,YTD
+Hh,347,Kitchen,2,Cookware,3,Bakeware,"1,234,484","3,382",27.00%,YTD
+Hh,347,Kitchen,3,Kitchen Linen,1,Apron / Gloves / Pot holder,"334,181",916,19.20%,YTD
+Hh,347,Kitchen,3,Kitchen Linen,2,Kitchen Towels & Linen,"356,407",976,15.80%,YTD
+Hh,347,Kitchen,4,Kitchen Storage,1,Food Storage & Bottles,"2,760,306","7,562",32.30%,YTD
+Hh,348,Bathroom,1,Shower,1,Shower Curtain,"88,116",241,-23.50%,YTD
+Hh,348,Bathroom,1,Shower,2,Shower Curtain Pole,"38,130",104,-29.30%,YTD
+Hh,348,Bathroom,1,Shower,3,Shower Accessories,"310,200",850,22.00%,YTD
+Hh,348,Bathroom,2,Bath Accessories,1,Bathroom Bins,"5,100,002","13,973",0.20%,YTD
+Hh,348,Bathroom,2,Bath Accessories,2,Baskets & Storage,"490,562","1,344",21.50%,YTD
+Hh,348,Bathroom,2,Bath Accessories,3,Wall Fixtures & Wireware,"345,565",947,7.40%,YTD
+Hh,348,Bathroom,2,Bath Accessories,4,Bathroom Accessories Sets,"401,962","1,101",48.30%,YTD
+Hh,348,Bathroom,2,Bath Accessories,5,Soap Dishes & Dispensers,"2,602,585","7,130",9.50%,YTD
+Hh,348,Bathroom,2,Bath Accessories,6,Tooth Brush Holders & Tumblers,"627,730","1,720",9.00%,YTD
+Hh,348,Bathroom,2,Bath Accessories,7,Hygiene Accessories,"1,440,902","3,948",8.00%,YTD
+Hh,348,Bathroom,2,Bath Accessories,8,Vanity & Scales,"6,278,152","17,200",14.30%,YTD
+Hh,348,Bathroom,3,Bath Textiles,1,Towels,"2,576,317","7,058",9.60%,YTD
+Hh,348,Bathroom,3,Bath Textiles,2,Bathrobes & Slippers,"897,878","2,460",34.00%,YTD
+Hh,348,Bathroom,3,Bath Textiles,3,Bathmats,"3,694,926","10,123",15.70%,YTD
+Hh,349,Utility & Storage,1,Storage,1,Clothes Storage,"216,714",594,28.10%,YTD
+Hh,349,Utility & Storage,1,Storage,2,Clothes Hangers,"1,016,071","2,784",0.20%,YTD
+Hh,349,Utility & Storage,1,Storage,3,Tall Hangers & Rails,"1,602,452","4,390",-6.90%,YTD
+Hh,349,Utility & Storage,1,Storage,4,Cosmetic & Beauty Storage,"1,847,043","5,060",26.90%,YTD
+Hh,349,Utility & Storage,1,Storage,5,Underbed Storage,"1,883,665","5,161",5.70%,YTD
+Hh,349,Utility & Storage,1,Storage,6,Shoe Storage,"453,716","1,243",0.20%,YTD
+Hh,349,Utility & Storage,1,Storage,7,Utility Storage,"967,706","2,651",32.20%,YTD
+Hh,349,Utility & Storage,1,Storage,8,Decorative Boxes & Baskets,"1,040,169","2,850",16.10%,YTD
+Hh,349,Utility & Storage,1,Storage,9,Drawer Towers,"236,751",649,3.70%,YTD
+Hh,349,Utility & Storage,1,Storage,10,Media  Storage,"132,829",364,-9.30%,YTD
+Hh,349,Utility & Storage,1,Storage,11,Storage Accessories,"452,108","1,239",24.60%,YTD
+Hh,349,Utility & Storage,2,Cleaning,1,Specialist Cleaning,"99,658",273,-2.40%,YTD
+Hh,349,Utility & Storage,2,Cleaning,2,Brushes / Sponges / Cloths,"134,226",368,1.40%,YTD
+Hh,349,Utility & Storage,2,Cleaning,3,Brooms / Mops / Dusters,"227,090",622,-0.70%,YTD
+Hh,349,Utility & Storage,2,Cleaning,4,Cleaning Appliances,0,0,0.00%,YTD
+Hh,349,Utility & Storage,2,Cleaning,5,Waste Bins,"1,826,511","5,004",23.80%,YTD
+Hh,349,Utility & Storage,3,Laundry,1,Ironing Boards & Accessories,"292,950",803,12.10%,YTD
+Hh,349,Utility & Storage,3,Laundry,2,Clothes Drying,"334,558",917,-0.60%,YTD
+Hh,349,Utility & Storage,3,Laundry,3,Laundry Hampers,"1,552,490","4,253",27.20%,YTD
+Hh,349,Utility & Storage,3,Laundry,4,Laundry Accessories,"100,510",275,23.20%,YTD
+Hh,349,Utility & Storage,4,Utility,1,DIY,0,0,0.00%,YTD
+Hh,350,Festive,1,Christmas,1,Trees,0,0,0.00%,YTD
+Hh,350,Festive,1,Christmas,2,Christmas Candles & Pot Pouri,0,0,0.00%,YTD
+Hh,350,Festive,1,Christmas,3,Christmas Decorations,337,1,0.00%,YTD
+Hh,350,Festive,1,Christmas,4,Christmas Lighting,0,0,0.00%,YTD
+Hh,350,Festive,1,Christmas,5,Christmas Textiles,0,0,0.00%,YTD
+Hh,350,Festive,1,Christmas,6,Christmas Tabletop,0,0,0.00%,YTD
+Hh,350,Festive,2,Festivals,1,Festive Decorations,0,0,0.00%,YTD
+Hh,350,Festive,2,Festivals,2,Festive Lighting,0,0,0.00%,YTD
+Hh,351,Cash Tills,1,Cash Tills,1,Cash Tills,"882,713","2,418",17.80%,YTD
+Hh,353,Make to Order(SORT),1,Window treatment,1,,0,0,0.00%,YTD
+Hh,353,Make to Order(SORT),1,Window treatment,2,Curtain,"372,162","1,020",152.20%,YTD
+Hh,353,Make to Order(SORT),1,Window treatment,3,Blinds,"15,936",44,-44.50%,YTD
+Kids,361,Kids Furniture,1,Kids Beds,1,Mid Sleepers & Loft Beds,"84,826",232,31.30%,YTD
+Kids,361,Kids Furniture,1,Kids Beds,2,Bunk Bed,"833,778","2,284",-12.10%,YTD
+Kids,361,Kids Furniture,1,Kids Beds,3,Kids Beds,"2,388,116","6,543",-5.90%,YTD
+Kids,361,Kids Furniture,1,Kids Beds,4,Toddler Beds,"222,599",610,17.60%,YTD
+Kids,361,Kids Furniture,2,Room Furniture & Storage,1,Kids Wardrobes,"1,549,749","4,246",0.40%,YTD
+Kids,361,Kids Furniture,2,Room Furniture & Storage,2,Kids Chest Of Drawers,"308,505",845,12.80%,YTD
+Kids,361,Kids Furniture,2,Room Furniture & Storage,3,Kids Night Stand,"391,015","1,071",-1.90%,YTD
+Kids,361,Kids Furniture,2,Room Furniture & Storage,4,Kids Dressing Tables & Mirrors,"506,015","1,386",25.20%,YTD
+Kids,361,Kids Furniture,2,Room Furniture & Storage,5,Kids Underbed,"76,570",210,-37.90%,YTD
+Kids,361,Kids Furniture,2,Room Furniture & Storage,6,Kids Bookcases,"143,774",394,9.60%,YTD
+Kids,361,Kids Furniture,2,Room Furniture & Storage,7,Kids Desks,"672,079","1,841",21.00%,YTD
+Kids,361,Kids Furniture,2,Room Furniture & Storage,8,Kids Chairs & Stools,"553,128","1,515",112.40%,YTD
+Kids,361,Kids Furniture,2,Room Furniture & Storage,9,Kids Bedroom Accessories,"56,893",156,-38.10%,YTD
+Kids,361,Kids Furniture,2,Room Furniture & Storage,10,Kids Storage,"75,898",208,16.00%,YTD
+Kids,361,Kids Furniture,3,Mattresses,1,Teens Mattresses,"53,411",146,-35.70%,YTD
+Kids,361,Kids Furniture,3,Mattresses,2,Kids Mattresses,"400,245","1,097",0.10%,YTD
+Kids,361,Kids Furniture,3,Mattresses,3,Nursery Mattresses,"174,040",477,21.80%,YTD
+Kids,361,Kids Furniture,4,Nursery,1,Cots,"210,367",576,42.10%,YTD
+Kids,361,Kids Furniture,4,Nursery,2,Nursery Wardrobe,"43,903",120,-0.10%,YTD
+Kids,361,Kids Furniture,4,Nursery,3,Nursery Chest of Drawers,"45,423",124,23.80%,YTD
+Kids,361,Kids Furniture,4,Nursery,4,Nursery Storage & Accessories,0,0,0.00%,YTD
+Kids,362,Room Decor,1,Lighting,1,Table Lamps,"372,520","1,021",16.10%,YTD
+Kids,362,Room Decor,1,Lighting,2,Floor Lamps,"1,162",3,-80.00%,YTD
+Kids,362,Room Decor,1,Lighting,3,Ceiling Lamps,"2,722",7,-66.70%,YTD
+Kids,362,Room Decor,1,Lighting,4,Core Electrical,0,0,0.00%,YTD
+Kids,362,Room Decor,1,Lighting,5,Decorative Lighting,"152,302",417,114.40%,YTD
+Kids,362,Room Decor,2,Decorative,1,Frames,"157,410",431,1.00%,YTD
+Kids,362,Room Decor,2,Decorative,2,Clocks,"8,380",23,-59.00%,YTD
+Kids,362,Room Decor,2,Decorative,3,Mirrors,"80,342",220,-13.00%,YTD
+Kids,362,Room Decor,2,Decorative,4,Wall Decor,"98,867",271,12.20%,YTD
+Kids,362,Room Decor,3,Floor Covering,1,Rugs,"173,751",476,24.00%,YTD
+Kids,362,Room Decor,3,Floor Covering,2,Play Mats,"77,092",211,-3.90%,YTD
+Kids,362,Room Decor,3,Floor Covering,3,Floor Seating,"180,220",494,-0.80%,YTD
+Kids,363,Soft Furnishing,1,Bed Linen,1,Duvets,"7,614",21,-36.40%,YTD
+Kids,363,Soft Furnishing,1,Bed Linen,2,Pillows,"56,915",156,-12.70%,YTD
+Kids,363,Soft Furnishing,1,Bed Linen,3,Mattress Toppers,0,0,0.00%,YTD
+Kids,363,Soft Furnishing,1,Bed Linen,4,Comforter Sets,"1,766,777","4,840",13.70%,YTD
+Kids,363,Soft Furnishing,1,Bed Linen,5,Duvet Covers,"40,487",111,-31.80%,YTD
+Kids,363,Soft Furnishing,1,Bed Linen,6,Sheets,"394,602","1,081",10.30%,YTD
+Kids,363,Soft Furnishing,1,Bed Linen,7,Pillow Case,"92,207",253,17.20%,YTD
+Kids,363,Soft Furnishing,1,Bed Linen,8,Blankets & Quilts,"299,604",821,29.20%,YTD
+Kids,363,Soft Furnishing,1,Bed Linen,9,Bed Accessories,"63,073",173,3.20%,YTD
+Kids,363,Soft Furnishing,1,Bed Linen,10,Cushions,"288,944",792,32.10%,YTD
+Kids,363,Soft Furnishing,2,Window Treatments,1,Curtains,780,2,-94.00%,YTD
+Kids,363,Soft Furnishing,2,Window Treatments,2,Blinds,0,0,0.00%,YTD
+Kids,363,Soft Furnishing,2,Window Treatments,3,Poles & Accessories,0,0,-100.00%,YTD
+Kids,364,Utility & Storage,1,Bath,1,Towels & Bathrobes,"136,125",373,8.50%,YTD
+Kids,364,Utility & Storage,1,Bath,2,Bath Accessories,"658,804","1,805",8.00%,YTD
+Kids,364,Utility & Storage,2,Storage,1,Hangers,"125,134",343,11.60%,YTD
+Kids,364,Utility & Storage,2,Storage,2,Storage,"643,556","1,763",28.60%,YTD
+Kids,364,Utility & Storage,3,Eat & Drink,1,Tableware,"138,922",381,-0.40%,YTD
+Kids,364,Utility & Storage,3,Eat & Drink,2,Water Bottles & Lunchboxes,"332,403",911,57.80%,YTD
+Kids,364,Utility & Storage,3,Eat & Drink,3,Food Storage,0,0,0.00%,YTD
+Kids,364,Utility & Storage,4,Safety,1,Child Safety,0,0,0.00%,YTD
+Kids,364,Utility & Storage,5,Luggage,1,Travel Gear,699,2,-88.90%,YTD
+Kids,364,Utility & Storage,5,Luggage,2,School Gear,"18,637",51,-4.50%,YTD
+Kids,365,Toys & Activities,1,Kids Toys,1,Soft Toys,"180,297",494,3.20%,YTD
+Kids,365,Toys & Activities,1,Kids Toys,2,Hard Toys,"120,813",331,-5.60%,YTD
+Kids,365,Toys & Activities,2,Activities,1,Tents,"41,875",115,-50.10%,YTD
+Kids,365,Toys & Activities,2,Activities,2,Learning,"147,161",403,-19.30%,YTD
+Kids,365,Toys & Activities,2,Activities,3,Outdoor Accessories,0,0,0.00%,YTD
+Kids,366,Cash Tills,1,Cash Tills,1,Cash Tills,"86,580",237,1.50%,YTD
+Kids,367,Festive,1,Festivals,1,Christmas,0,0,0.00%,YTD
+Kids,367,Festive,1,Festivals,2,Decorations & Accessories,0,0,0.00%,YTD
