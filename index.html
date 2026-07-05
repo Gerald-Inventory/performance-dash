@@ -15,7 +15,15 @@
 
         .header-box { text-align: center; margin-bottom: 15px; }
         h1 { font-size: 1.4rem; margin: 0; color: var(--primary); }
-        #status { font-size: 11px; color: #64748b; margin-top: 5px; }
+        #status { font-size: 11px; color: #64748b; margin-top: 5px; padding: 4px; border-radius: 4px; }
+        .error-status { background: #fee2e2; color: #b91c1c !important; font-weight: bold; }
+
+        /* File input fallback styling */
+        .upload-zone {
+            background: #e2e8f0; padding: 10px; border-radius: 10px;
+            text-align: center; margin-bottom: 15px; font-size: 13px;
+        }
+        .upload-zone input { font-size: 12px; margin-top: 5px; }
 
         .period-flex { display: flex; gap: 10px; margin-bottom: 15px; }
         .period-btn { 
@@ -24,7 +32,6 @@
         }
         .period-btn.active { background: var(--accent); color: white; }
 
-        /* KPI Tiles Styles */
         .tiles-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -32,22 +39,11 @@
             margin-bottom: 15px;
         }
         .tile-card {
-            background: white;
-            padding: 12px 15px;
-            border-radius: 15px;
-            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
-            display: flex;
-            flex-direction: column;
+            background: white; padding: 12px 15px; border-radius: 15px;
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05); display: flex; flex-direction: column;
         }
-        .tile-val {
-            font-size: 1.3rem;
-            font-weight: 800;
-            margin-top: 4px;
-            color: var(--primary);
-        }
-        .tile-accent {
-            color: var(--accent);
-        }
+        .tile-val { font-size: 1.3rem; font-weight: 800; margin-top: 4px; color: var(--primary); }
+        .tile-accent { color: var(--accent); }
 
         .controls-card {
             background: white; padding: 15px; border-radius: 15px;
@@ -57,7 +53,6 @@
         .control-group { display: flex; flex-direction: column; }
         label { font-size: 10px; font-weight: 800; color: #94a3b8; text-transform: uppercase; margin-bottom: 6px; }
         
-        /* Styled Multi-select box */
         select[multiple] { 
             padding: 8px; border-radius: 10px; border: 1px solid #e2e8f0; 
             font-size: 15px; background-color: #f8fafc; min-height: 95px;
@@ -72,7 +67,6 @@
         th { background: #f8fafc; padding: 12px; text-align: left; font-size: 11px; color: #64748b; border-bottom: 1px solid #f1f5f9; }
         td { padding: 14px 12px; border-bottom: 1px solid #f1f5f9; }
         
-        /* Product Hierarchy Styles */
         .sub-bold { font-weight: 800; font-size: 15px; color: var(--primary); display: block; }
         .class-muted { font-size: 12px; color: #64748b; display: block; margin-top: 2px; }
         
@@ -83,8 +77,6 @@
         }
         .pos { background: #dcfce7; color: #166534; }
         .neg { background: #fee2e2; color: #991b1b; }
-
-        /* Total Row Explicit Highlighting */
         .total-row { background: #f8fafc; border-top: 2px solid #e2e8f0; }
         .total-row td { padding: 16px 12px; }
     </style>
@@ -93,7 +85,13 @@
 
 <div class="header-box">
     <h1>DSR Analysis</h1>
-    <div id="status">Checking GitHub for dsr.csv...</div>
+    <div id="status">Attempting to auto-load dsr.csv...</div>
+</div>
+
+<!-- Fallback upload layout for local testing or strict browsers -->
+<div class="upload-zone" id="uploadZone">
+    <div>💡 <strong>Running locally?</strong> Browsers block auto-loading files for security. Drop or select your file manually:</div>
+    <input type="file" id="csvFileInput" accept=".csv" onchange="handleManualFile(event)">
 </div>
 
 <div class="period-flex">
@@ -101,7 +99,6 @@
     <button class="period-btn" id="btnYTD" onclick="setPeriod('YTD')">YTD</button>
 </div>
 
-<!-- Dynamic Summary KPI Tiles -->
 <div class="tiles-grid">
     <div class="tile-card">
         <label>CY Sale Value</label>
@@ -115,8 +112,8 @@
 
 <div class="controls-card">
     <div class="control-group">
-        <label>Division <span class="select-help">(Tap multiple)</span></label>
-        <select id="divSlicer" onchange="handleDivChange()" multiple><option>Loading...</option></select>
+        <label>Division <span class="select-help">(Hold Ctrl/Cmd or drag to select multiple)</span></label>
+        <select id="divSlicer" onchange="handleDivChange()" multiple><option>Waiting for data...</option></select>
     </div>
     <div class="control-group">
         <label>Department <span class="select-help">(Tap multiple)</span></label>
@@ -141,7 +138,7 @@
             </tr>
         </thead>
         <tbody id="tableBody">
-            <tr><td colspan="2" style="text-align:center; padding: 40px; color: #94a3b8;">Loading data...</td></tr>
+            <tr><td colspan="2" style="text-align:center; padding: 40px; color: #94a3b8;">Please wait or upload your dsr.csv file above.</td></tr>
         </tbody>
     </table>
 </div>
@@ -152,7 +149,7 @@
 
     const cleanNum = (v) => v ? parseFloat(v.toString().replace(/,/g, '').replace(/%/g, '')) || 0 : 0;
 
-    // Load automatically from GitHub
+    // 1. Auto Load Attempt
     window.addEventListener('DOMContentLoaded', () => {
         Papa.parse("dsr.csv", {
             download: true,
@@ -160,19 +157,67 @@
             dynamicTyping: true,
             skipEmptyLines: true,
             complete: function(results) {
-                rawData = results.data.filter(row => row.Division);
-                if(rawData.length > 0) {
-                    document.getElementById('status').innerText = "✅ Updated: " + new Date().toLocaleTimeString();
-                    initFilters();
-                } else {
-                    document.getElementById('status').innerText = "❌ Error: dsr.csv invalid";
-                }
+                processParsedData(results);
             },
-            error: function() {
-                document.getElementById('status').innerText = "❌ Error: dsr.csv not found in GitHub";
+            error: function(err) {
+                console.error("Auto-load failed: ", err);
+                updateStatus("⚠️ Auto-load failed (CORS local restriction or 404). Use the upload button below.", true);
             }
         });
     });
+
+    // 2. Manual Backup Upload
+    function handleManualFile(event) {
+        const file = event.target.files[0];
+        if (!file) return;
+
+        updateStatus("Parsing uploaded file...", false);
+        Papa.parse(file, {
+            header: true,
+            dynamicTyping: true,
+            skipEmptyLines: true,
+            complete: function(results) {
+                processParsedData(results);
+                // Hide upload zone once successfully loaded manually to clean up screen space
+                document.getElementById('uploadZone').style.display = 'none';
+            },
+            error: function(err) {
+                updateStatus("❌ Parsing Error: " + err.message, true);
+            }
+        });
+    }
+
+    // Process raw output & check columns safely
+    function processParsedData(results) {
+        rawData = results.data.filter(row => row.Division);
+        
+        if(rawData.length === 0) {
+            updateStatus("❌ Error: File parsed but zero valid data rows found. Check 'Division' column header.", true);
+            return;
+        }
+
+        // Quick verification check of key columns in developer console
+        const firstRow = rawData[0];
+        console.log("Detected Columns:", Object.keys(firstRow));
+        
+        if (!('Cy_Sale_Value' in firstRow)) {
+            updateStatus("⚠️ Warning: Column 'Cy_Sale_Value' not found exactly as spelled! Checks console.", true);
+        } else {
+            updateStatus("✅ Data Loaded: " + rawData.length + " rows active.", false);
+        }
+
+        initFilters();
+    }
+
+    function updateStatus(msg, isError) {
+        const statusDiv = document.getElementById('status');
+        statusDiv.innerText = msg;
+        if(isError) {
+            statusDiv.classList.add('error-status');
+        } else {
+            statusDiv.classList.remove('error-status');
+        }
+    }
 
     function setPeriod(p) {
         currentPeriod = p;
@@ -181,7 +226,6 @@
         applyFilters();
     }
 
-    // Helper to pull array of selected values from a multi-select element
     function getSelectedValues(id) {
         const select = document.getElementById(id);
         const values = Array.from(select.selectedOptions).map(opt => opt.value);
@@ -241,6 +285,8 @@
     }
 
     function applyFilters() {
+        if(rawData.length === 0) return;
+
         const divs = getSelectedValues('divSlicer');
         const depts = getSelectedValues('deptSlicer');
         const classes = getSelectedValues('classSlicer');
@@ -254,7 +300,7 @@
                    (String(row.Year).toUpperCase() === currentPeriod);
         });
 
-        // Update Summary Tiles based on filtered view
+        // Summary calculations
         const totalCySales = filtered.reduce((sum, r) => sum + cleanNum(r.Cy_Sale_Value), 0);
         const totalSpd = filtered.reduce((sum, r) => sum + cleanNum(r.SPD), 0);
         
@@ -269,7 +315,7 @@
         tbody.innerHTML = '';
         
         if (data.length === 0) {
-            tbody.innerHTML = '<tr><td colspan="2" style="text-align:center; padding: 30px;">No results.</td></tr>';
+            tbody.innerHTML = '<tr><td colspan="2" style="text-align:center; padding: 30px;">No results found for current filters.</td></tr>';
             return;
         }
 
@@ -286,8 +332,8 @@
             const tr = document.createElement('tr');
             tr.innerHTML = `
                 <td>
-                    <span class="sub-bold">${row['Subclass Name']}</span>
-                    <span class="class-muted">${row['Class name']}</span>
+                    <span class="sub-bold">${row['Subclass Name'] || 'Unknown'}</span>
+                    <span class="class-muted">${row['Class name'] || 'Unknown'}</span>
                 </td>
                 <td class="val-num">
                     <div>${spd.toLocaleString(undefined, {maximumFractionDigits: 0})}</div>
@@ -299,14 +345,14 @@
             tbody.appendChild(tr);
         });
 
-        // Add explicit TOTAL calculations row at the bottom of the table matrix
+        // Table Bottom Aggregation Total
         const avgGrowth = runningGrowthSum / data.length;
         const trTotal = document.createElement('tr');
         trTotal.className = 'total-row';
         trTotal.innerHTML = `
             <td>
                 <span class="sub-bold">TOTAL</span>
-                <span class="class-muted">${data.length} items aggregated</span>
+                <span class="class-muted">${data.length} records processed</span>
             </td>
             <td class="val-num">
                 <div>${totalSpd.toLocaleString(undefined, {maximumFractionDigits: 0})}</div>
