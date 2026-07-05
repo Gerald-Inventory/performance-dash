@@ -24,21 +24,49 @@
         }
         .period-btn.active { background: var(--accent); color: white; }
 
+        /* KPI Tiles Styles */
+        .tiles-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+        .tile-card {
+            background: white;
+            padding: 12px 15px;
+            border-radius: 15px;
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
+            display: flex;
+            flex-direction: column;
+        }
+        .tile-val {
+            font-size: 1.3rem;
+            font-weight: 800;
+            margin-top: 4px;
+            color: var(--primary);
+        }
+        .tile-accent {
+            color: var(--accent);
+        }
+
         .controls-card {
             background: white; padding: 15px; border-radius: 15px;
             box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05); margin-bottom: 15px;
-            display: grid; grid-template-columns: 1fr; gap: 10px;
+            display: grid; grid-template-columns: 1fr; gap: 12px;
         }
         .control-group { display: flex; flex-direction: column; }
-        label { font-size: 10px; font-weight: 800; color: #94a3b8; text-transform: uppercase; margin-bottom: 4px; }
-        select { 
-            padding: 12px; border-radius: 10px; border: 1px solid #e2e8f0; 
-            font-size: 16px; background-color: #f8fafc;
+        label { font-size: 10px; font-weight: 800; color: #94a3b8; text-transform: uppercase; margin-bottom: 6px; }
+        
+        /* Styled Multi-select box */
+        select[multiple] { 
+            padding: 8px; border-radius: 10px; border: 1px solid #e2e8f0; 
+            font-size: 15px; background-color: #f8fafc; min-height: 95px;
         }
+        .select-help { font-size: 9px; color: #94a3b8; margin-top: 2px; text-transform: none; font-weight: normal; }
 
         .table-wrapper {
             background: white; border-radius: 15px; overflow: hidden;
-            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05); margin-bottom: 20px;
         }
         table { width: 100%; border-collapse: collapse; }
         th { background: #f8fafc; padding: 12px; text-align: left; font-size: 11px; color: #64748b; border-bottom: 1px solid #f1f5f9; }
@@ -55,6 +83,10 @@
         }
         .pos { background: #dcfce7; color: #166534; }
         .neg { background: #fee2e2; color: #991b1b; }
+
+        /* Total Row Explicit Highlighting */
+        .total-row { background: #f8fafc; border-top: 2px solid #e2e8f0; }
+        .total-row td { padding: 16px 12px; }
     </style>
 </head>
 <body>
@@ -69,22 +101,34 @@
     <button class="period-btn" id="btnYTD" onclick="setPeriod('YTD')">YTD</button>
 </div>
 
+<!-- Dynamic Summary KPI Tiles -->
+<div class="tiles-grid">
+    <div class="tile-card">
+        <label>CY Sale Value</label>
+        <div id="tileCySales" class="tile-val tile-accent">0</div>
+    </div>
+    <div class="tile-card">
+        <label>Total SPD</label>
+        <div id="tileTotalSpd" class="tile-val">0</div>
+    </div>
+</div>
+
 <div class="controls-card">
     <div class="control-group">
-        <label>Division</label>
-        <select id="divSlicer" onchange="handleDivChange()"><option>Loading...</option></select>
+        <label>Division <span class="select-help">(Tap multiple)</span></label>
+        <select id="divSlicer" onchange="handleDivChange()" multiple><option>Loading...</option></select>
     </div>
     <div class="control-group">
-        <label>Department</label>
-        <select id="deptSlicer" onchange="handleDeptChange()"><option>All</option></select>
+        <label>Department <span class="select-help">(Tap multiple)</span></label>
+        <select id="deptSlicer" onchange="handleDeptChange()" multiple><option>All</option></select>
     </div>
     <div class="control-group">
-        <label>Class</label>
-        <select id="classSlicer" onchange="handleClassChange()"><option>All</option></select>
+        <label>Class <span class="select-help">(Tap multiple)</span></label>
+        <select id="classSlicer" onchange="handleClassChange()" multiple><option>All</option></select>
     </div>
     <div class="control-group">
-        <label>Subclass</label>
-        <select id="subclassSlicer" onchange="applyFilters()"><option>All</option></select>
+        <label>Subclass <span class="select-help">(Tap multiple)</span></label>
+        <select id="subclassSlicer" onchange="applyFilters()" multiple><option>All</option></select>
     </div>
 </div>
 
@@ -137,6 +181,14 @@
         applyFilters();
     }
 
+    // Helper to pull array of selected values from a multi-select element
+    function getSelectedValues(id) {
+        const select = document.getElementById(id);
+        const values = Array.from(select.selectedOptions).map(opt => opt.value);
+        if (values.length === 0 || values.includes('All')) return ['All'];
+        return values;
+    }
+
     function initFilters() {
         const divs = [...new Set(rawData.map(r => r.Division))].filter(Boolean).sort();
         populateSelect('divSlicer', divs, "All Divisions");
@@ -144,30 +196,35 @@
     }
 
     function handleDivChange() {
-        const div = document.getElementById('divSlicer').value;
-        const filtered = (div === 'All') ? rawData : rawData.filter(r => r.Division === div);
+        const divs = getSelectedValues('divSlicer');
+        const filtered = divs.includes('All') ? rawData : rawData.filter(r => divs.includes(r.Division));
+        
         const depts = [...new Set(filtered.map(r => r['Dept Name']))].filter(Boolean).sort();
         populateSelect('deptSlicer', depts, "All Departments");
         handleDeptChange();
     }
 
     function handleDeptChange() {
-        const div = document.getElementById('divSlicer').value;
-        const dept = document.getElementById('deptSlicer').value;
-        let filtered = (div === 'All') ? rawData : rawData.filter(r => r.Division === div);
-        if (dept !== 'All') filtered = filtered.filter(r => r['Dept Name'] === dept);
+        const divs = getSelectedValues('divSlicer');
+        const depts = getSelectedValues('deptSlicer');
+        
+        let filtered = divs.includes('All') ? rawData : rawData.filter(r => divs.includes(r.Division));
+        if (!depts.includes('All')) filtered = filtered.filter(r => depts.includes(r['Dept Name']));
+        
         const classes = [...new Set(filtered.map(r => r['Class name']))].filter(Boolean).sort();
         populateSelect('classSlicer', classes, "All Classes");
         handleClassChange();
     }
 
     function handleClassChange() {
-        const div = document.getElementById('divSlicer').value;
-        const dept = document.getElementById('deptSlicer').value;
-        const cls = document.getElementById('classSlicer').value;
-        let filtered = (div === 'All') ? rawData : rawData.filter(r => r.Division === div);
-        if (dept !== 'All') filtered = filtered.filter(r => r['Dept Name'] === dept);
-        if (cls !== 'All') filtered = filtered.filter(r => r['Class name'] === cls);
+        const divs = getSelectedValues('divSlicer');
+        const depts = getSelectedValues('deptSlicer');
+        const classes = getSelectedValues('classSlicer');
+        
+        let filtered = divs.includes('All') ? rawData : rawData.filter(r => divs.includes(r.Division));
+        if (!depts.includes('All')) filtered = filtered.filter(r => depts.includes(r['Dept Name']));
+        if (!classes.includes('All')) filtered = filtered.filter(r => classes.includes(r['Class name']));
+        
         const subClasses = [...new Set(filtered.map(r => r['Subclass Name']))].filter(Boolean).sort();
         populateSelect('subclassSlicer', subClasses, "All Subclasses");
         applyFilters();
@@ -175,7 +232,7 @@
 
     function populateSelect(id, items, defaultText) {
         const s = document.getElementById(id);
-        s.innerHTML = `<option value="All">${defaultText}</option>`;
+        s.innerHTML = `<option value="All" selected>${defaultText}</option>`;
         items.forEach(item => {
             let opt = document.createElement('option');
             opt.value = item; opt.textContent = item;
@@ -184,31 +241,48 @@
     }
 
     function applyFilters() {
-        const div = document.getElementById('divSlicer').value;
-        const dept = document.getElementById('deptSlicer').value;
-        const cls = document.getElementById('classSlicer').value;
-        const sub = document.getElementById('subclassSlicer').value;
+        const divs = getSelectedValues('divSlicer');
+        const depts = getSelectedValues('deptSlicer');
+        const classes = getSelectedValues('classSlicer');
+        const subs = getSelectedValues('subclassSlicer');
 
         let filtered = rawData.filter(row => {
-            return (div === 'All' || row.Division === div) &&
-                   (dept === 'All' || row['Dept Name'] === dept) &&
-                   (cls === 'All' || row['Class name'] === cls) &&
-                   (sub === 'All' || row['Subclass Name'] === sub) &&
+            return (divs.includes('All') || divs.includes(row.Division)) &&
+                   (depts.includes('All') || depts.includes(row['Dept Name'])) &&
+                   (classes.includes('All') || classes.includes(row['Class name'])) &&
+                   (subs.includes('All') || subs.includes(row['Subclass Name'])) &&
                    (String(row.Year).toUpperCase() === currentPeriod);
         });
+
+        // Update Summary Tiles based on filtered view
+        const totalCySales = filtered.reduce((sum, r) => sum + cleanNum(r.Cy_Sale_Value), 0);
+        const totalSpd = filtered.reduce((sum, r) => sum + cleanNum(r.SPD), 0);
+        
+        document.getElementById('tileCySales').innerText = totalCySales.toLocaleString(undefined, {maximumFractionDigits: 0});
+        document.getElementById('tileTotalSpd').innerText = totalSpd.toLocaleString(undefined, {maximumFractionDigits: 0});
+
         renderTable(filtered);
     }
 
     function renderTable(data) {
         const tbody = document.getElementById('tableBody');
         tbody.innerHTML = '';
+        
         if (data.length === 0) {
             tbody.innerHTML = '<tr><td colspan="2" style="text-align:center; padding: 30px;">No results.</td></tr>';
             return;
         }
+
+        let totalSpd = 0;
+        let runningGrowthSum = 0;
+
         data.forEach(row => {
             const spd = cleanNum(row.SPD);
             const growth = cleanNum(row['Growth%']);
+            
+            totalSpd += spd;
+            runningGrowthSum += growth;
+
             const tr = document.createElement('tr');
             tr.innerHTML = `
                 <td>
@@ -224,6 +298,24 @@
             `;
             tbody.appendChild(tr);
         });
+
+        // Add explicit TOTAL calculations row at the bottom of the table matrix
+        const avgGrowth = runningGrowthSum / data.length;
+        const trTotal = document.createElement('tr');
+        trTotal.className = 'total-row';
+        trTotal.innerHTML = `
+            <td>
+                <span class="sub-bold">TOTAL</span>
+                <span class="class-muted">${data.length} items aggregated</span>
+            </td>
+            <td class="val-num">
+                <div>${totalSpd.toLocaleString(undefined, {maximumFractionDigits: 0})}</div>
+                <div class="growth-pill ${avgGrowth >= 0 ? 'pos' : 'neg'}">
+                    ${avgGrowth >= 0 ? '▲' : '▼'} ${Math.abs(avgGrowth).toFixed(1)}%
+                </div>
+            </td>
+        `;
+        tbody.appendChild(trTotal);
     }
 </script>
 
