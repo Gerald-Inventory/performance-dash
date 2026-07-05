@@ -19,15 +19,6 @@
         .error-status { background: #fee2e2; color: #b91c1c !important; font-weight: bold; border: 1px solid #fecaca; }
         .success-status { background: #dcfce7; color: #166534 !important; }
 
-        /* Enhanced Fallback Input Panel */
-        .upload-zone {
-            background: white; padding: 15px; border-radius: 15px;
-            text-align: center; margin-bottom: 15px; font-size: 13px;
-            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
-            border: 2px dashed #cbd5e1;
-        }
-        .upload-zone input { font-size: 14px; margin-top: 8px; width: 100%; max-width: 250px; }
-
         .period-flex { display: flex; gap: 10px; margin-bottom: 15px; }
         .period-btn { 
             flex: 1; padding: 12px; border: none; border-radius: 10px; 
@@ -35,6 +26,7 @@
         }
         .period-btn.active { background: var(--accent); color: white; }
 
+        /* KPI Tiles Grid */
         .tiles-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -80,6 +72,8 @@
         }
         .pos { background: #dcfce7; color: #166534; }
         .neg { background: #fee2e2; color: #991b1b; }
+        
+        /* Calculated Summary Matrix Totals Footer */
         .total-row { background: #f8fafc; border-top: 2px solid #e2e8f0; }
         .total-row td { padding: 16px 12px; }
     </style>
@@ -88,13 +82,7 @@
 
 <div class="header-box">
     <h1>DSR Analysis</h1>
-    <div id="status">Connecting to GitHub file system...</div>
-</div>
-
-<!-- Upload form handles local hosting & repo fallback errors instantly -->
-<div class="upload-zone" id="uploadZone" style="display: none;">
-    <div><strong>GitHub Auto-load Failed:</strong> Could not find your CSV file in this repository path automatically. Please select it manually:</div>
-    <input type="file" id="csvFileInput" accept=".csv" onchange="handleManualFile(event)">
+    <div id="status">Syncing live dataset from GitHub...</div>
 </div>
 
 <div class="period-flex">
@@ -102,6 +90,7 @@
     <button class="period-btn" id="btnYTD" onclick="setPeriod('YTD')">YTD</button>
 </div>
 
+<!-- Dynamic Calculated KPI Summary Tiles -->
 <div class="tiles-grid">
     <div class="tile-card">
         <label>CY Sale Value</label>
@@ -115,19 +104,19 @@
 
 <div class="controls-card">
     <div class="control-group">
-        <label>Division <span class="select-help">(Tap multiple items)</span></label>
-        <select id="divSlicer" onchange="handleDivChange()" multiple><option>Waiting for data...</option></select>
+        <label>Division <span class="select-help">(Tap items to cross-filter)</span></label>
+        <select id="divSlicer" onchange="handleDivChange()" multiple><option>Loading options...</option></select>
     </div>
     <div class="control-group">
-        <label>Department <span class="select-help">(Tap multiple items)</span></label>
+        <label>Department <span class="select-help">(Multi-select active)</span></label>
         <select id="deptSlicer" onchange="handleDeptChange()" multiple><option>All</option></select>
     </div>
     <div class="control-group">
-        <label>Class <span class="select-help">(Tap multiple items)</span></label>
+        <label>Class <span class="select-help">(Multi-select active)</span></label>
         <select id="classSlicer" onchange="handleClassChange()" multiple><option>All</option></select>
     </div>
     <div class="control-group">
-        <label>Subclass <span class="select-help">(Tap multiple items)</span></label>
+        <label>Subclass <span class="select-help">(Multi-select active)</span></label>
         <select id="subclassSlicer" onchange="applyFilters()" multiple><option>All</option></select>
     </div>
 </div>
@@ -141,7 +130,7 @@
             </tr>
         </thead>
         <tbody id="tableBody">
-            <tr><td colspan="2" style="text-align:center; padding: 40px; color: #94a3b8;">Scanning for data source file...</td></tr>
+            <tr><td colspan="2" style="text-align:center; padding: 40px; color: #94a3b8;">Processing data streams...</td></tr>
         </tbody>
     </table>
 </div>
@@ -152,86 +141,35 @@
 
     const cleanNum = (v) => v ? parseFloat(v.toString().replace(/,/g, '').replace(/%/g, '')) || 0 : 0;
 
-    // Array of files paths to check in case of casing typos on GitHub filesystems
-    const fallBackPaths = ["dsr.csv", "DSR.csv", "dsr.CSV", "../dsr.csv"];
-    let currentPathIndex = 0;
-
+    // Direct background synchronization with your repository's root dsr.csv
     window.addEventListener('DOMContentLoaded', () => {
-        tryFetchCSV();
-    });
-
-    // Tries multiple filename paths before stopping and rendering upload screen
-    function tryFetchCSV() {
-        if (currentPathIndex >= fallBackPaths.length) {
-            updateStatus("❌ GitHub load failed. Please upload dsr.csv manually below.", true);
-            document.getElementById('uploadZone').style.display = 'block';
-            return;
-        }
-
-        let targetPath = fallBackPaths[currentPathIndex];
-        console.log("Testing path: " + targetPath);
-
-        Papa.parse(targetPath, {
+        Papa.parse("dsr.csv", {
             download: true,
             header: true,
             dynamicTyping: true,
             skipEmptyLines: true,
             complete: function(results) {
-                // If it successfully loads but empty, move to next pattern entry
-                if(!results.data || results.data.length < 2 || !results.data[0].Division) {
-                    currentPathIndex++;
-                    tryFetchCSV();
-                } else {
-                    processParsedData(results);
+                rawData = results.data.filter(row => row.Division);
+                
+                if(rawData.length === 0) {
+                    updateStatus("❌ Error: File found but 'Division' column signature is missing.", true);
+                    return;
                 }
-            },
-            error: function() {
-                currentPathIndex++;
-                tryFetchCSV();
-            }
-        });
-    }
 
-    function handleManualFile(event) {
-        const file = event.target.files[0];
-        if (!file) return;
-
-        updateStatus("Parsing custom uploaded matrix file...", false);
-        Papa.parse(file, {
-            header: true,
-            dynamicTyping: true,
-            skipEmptyLines: true,
-            complete: function(results) {
-                processParsedData(results);
-                document.getElementById('uploadZone').style.display = 'none';
+                updateStatus("✅ Live Data Synchronized", false);
+                initFilters();
             },
             error: function(err) {
-                updateStatus("❌ Critical File Parsing Error: " + err.message, true);
+                console.error(err);
+                updateStatus("❌ Error: Cannot pull dsr.csv from repository root path.", true);
             }
         });
-    }
-
-    function processParsedData(results) {
-        rawData = results.data.filter(row => row.Division);
-        
-        if(rawData.length === 0) {
-            updateStatus("❌ Error: Header columns missing. Checked for 'Division'.", true);
-            document.getElementById('uploadZone').style.display = 'block';
-            return;
-        }
-
-        updateStatus("✅ Active Data Synchronized", false);
-        initFilters();
-    }
+    });
 
     function updateStatus(msg, isError) {
         const statusDiv = document.getElementById('status');
         statusDiv.innerText = msg;
-        if(isError) {
-            statusDiv.className = 'error-status';
-        } else {
-            statusDiv.className = 'success-status';
-        }
+        statusDiv.className = isError ? 'error-status' : 'success-status';
     }
 
     function setPeriod(p) {
@@ -241,6 +179,7 @@
         applyFilters();
     }
 
+    // Helper map extraction function for native multi-select options
     function getSelectedValues(id) {
         const select = document.getElementById(id);
         const values = Array.from(select.selectedOptions).map(opt => opt.value);
@@ -315,6 +254,7 @@
                    (String(row.Year).toUpperCase() === currentPeriod);
         });
 
+        // Compute live values for KPI Metrics Display cards
         const totalCySales = filtered.reduce((sum, r) => sum + cleanNum(r.Cy_Sale_Value), 0);
         const totalSpd = filtered.reduce((sum, r) => sum + cleanNum(r.SPD), 0);
         
@@ -329,7 +269,7 @@
         tbody.innerHTML = '';
         
         if (data.length === 0) {
-            tbody.innerHTML = '<tr><td colspan="2" style="text-align:center; padding: 30px;">No results matching current selections.</td></tr>';
+            tbody.innerHTML = '<tr><td colspan="2" style="text-align:center; padding: 30px;">No match for criteria.</td></tr>';
             return;
         }
 
@@ -359,13 +299,14 @@
             tbody.appendChild(tr);
         });
 
+        // Append bottom total aggregation matrix block
         const avgGrowth = runningGrowthSum / data.length;
         const trTotal = document.createElement('tr');
         trTotal.className = 'total-row';
         trTotal.innerHTML = `
             <td>
                 <span class="sub-bold">TOTAL</span>
-                <span class="class-muted">${data.length} entries calculated</span>
+                <span class="class-muted">${data.length} intersections calculated</span>
             </td>
             <td class="val-num">
                 <div>${totalSpd.toLocaleString(undefined, {maximumFractionDigits: 0})}</div>
